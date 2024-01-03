@@ -1,0 +1,67 @@
+@import "general";
+
+.header-intro-wrapper {
+  padding-top: 3.2rem;
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 700px;
+}
+
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.header__logo {
+  display: block;
+  width: 6.875rem;
+  height: 2.40981rem;
+  flex-shrink: 0;
+  margin-right: 9.2rem;
+}
+
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.navbar__item:hover .navbar__link {
+  color: var(--some-text);
+}
+
+
+.navbar__link {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+
+.header__link {
+  width: 100%;
+  max-width: 13rem;
+  height: 4rem;
+  display: flex;
+  padding: 1.125rem 1.6875rem;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--darker-color);
+}
+

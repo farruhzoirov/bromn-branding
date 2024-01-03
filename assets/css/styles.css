@@ -1,12 +1,45 @@
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Regular.woff2") format("woff2"), url("../fonts/Degular-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Medium.woff2") format("woff2"), url("../fonts/Degular-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Semibold.woff2") format("woff2"), url("../fonts/Degular-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  --some-text: #9954ff;
+  --darker-color: #4918a6;
+}
+
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+  font-family: "Degular", Arial, sans-serif;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   min-height: 100vh;
   max-height: 100vh;
@@ -29,18 +62,155 @@ button {
   border: none;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .container {
   width: 100%;
-  max-width: 1480px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 92.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.header-intro-wrapper {
+  padding-top: 3.2rem;
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 700px;
+}
+
 .flex-container {
   display: flex;
+  align-items: center;
   width: 100%;
+}
+
+.header__logo {
+  display: block;
+  width: 6.875rem;
+  height: 2.40981rem;
+  flex-shrink: 0;
+  margin-right: 9.2rem;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.navbar__item:hover .navbar__link {
+  color: var(--some-text);
+}
+
+.navbar__link {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.header__link {
+  width: 100%;
+  max-width: 13rem;
+  height: 4rem;
+  display: flex;
+  padding: 1.125rem 1.6875rem;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--darker-color);
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Regular.woff2") format("woff2"), url("../fonts/Degular-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Medium.woff2") format("woff2"), url("../fonts/Degular-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Semibold.woff2") format("woff2"), url("../fonts/Degular-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  --some-text: #9954ff;
+  --darker-color: #4918a6;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Degular", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 92.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
