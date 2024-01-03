@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li,p,a {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+}
