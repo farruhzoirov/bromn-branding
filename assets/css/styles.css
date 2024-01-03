@@ -30,6 +30,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -77,12 +78,19 @@ img {
 }
 
 .header-intro-wrapper {
-  padding-top: 3.2rem;
+  padding-top: 2.5rem;
   background-image: url("../img/main-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 700px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.site-header {
+  padding: 0.7rem;
+  margin-bottom: 12rem;
 }
 
 .flex-container {
@@ -99,6 +107,14 @@ img {
   margin-right: 9.2rem;
 }
 
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
 .navbar__list {
   display: flex;
   align-items: center;
@@ -110,6 +126,10 @@ img {
 
 .navbar__item:hover .navbar__link {
   color: var(--some-text);
+}
+
+.navbar__item:active .navbar__link {
+  color: rgba(153, 84, 255, 0.6);
 }
 
 .navbar__link {
@@ -144,6 +164,27 @@ img {
   text-transform: uppercase;
 }
 
+.header__link:hover {
+  background-color: rgba(73, 24, 166, 0.8);
+}
+
+.header__link:active {
+  background-color: rgba(73, 24, 166, 0.6);
+}
+
+.site-intro__wrapper {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.site-intro__title {
+  color: #ffffff;
+  font-size: 4.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107%;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
@@ -176,6 +217,7 @@ img {
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {

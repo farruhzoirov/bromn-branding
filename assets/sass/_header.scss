@@ -1,14 +1,20 @@
 @import "general";
 
 .header-intro-wrapper {
-  padding-top: 3.2rem;
+  padding-top: 2.5rem;
   background-image: url("../img/main-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 700px;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: 100%;
 }
 
+.site-header {
+  padding: 0.7rem;
+  margin-bottom: 12rem;
+}
 
 .flex-container {
   display: flex;
@@ -16,14 +22,19 @@
   width: 100%;
 }
 
-
-
 .header__logo {
   display: block;
   width: 6.875rem;
   height: 2.40981rem;
   flex-shrink: 0;
   margin-right: 9.2rem;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+.header__logo:active {
+  opacity: 0.6;
 }
 
 
@@ -38,6 +49,10 @@
 
 .navbar__item:hover .navbar__link {
   color: var(--some-text);
+}
+
+.navbar__item:active .navbar__link {
+  color: rgba(153, 84, 255, 0.6);
 }
 
 
@@ -75,3 +90,23 @@
   text-transform: uppercase;
 }
 
+.header__link:hover {
+  background-color: rgba(73, 24, 166, 0.8);
+}
+
+.header__link:active {
+  background-color: rgba(73, 24, 166, 0.6);
+}
+
+.site-intro__wrapper {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.site-intro__title {
+  color: #ffffff;
+  font-size: 4.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107%;
+}
