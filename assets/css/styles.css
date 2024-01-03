@@ -135,6 +135,15 @@ img {
   background-color: var(--darker-color);
 }
 
+.now-connecting {
+  color: #ffffff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
