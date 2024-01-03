@@ -83,7 +83,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  background-attachment: fixed;
   min-height: 100vh;
   height: 100%;
 }
@@ -194,6 +193,93 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 107%;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Regular.woff2") format("woff2"), url("../fonts/Degular-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Medium.woff2") format("woff2"), url("../fonts/Degular-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("../fonts/Degular-Semibold.woff2") format("woff2"), url("../fonts/Degular-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  --some-text: #9954ff;
+  --darker-color: #4918a6;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: "Degular", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 92.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+.site-main__wrapper {
+  height: 400px;
 }
 
 @font-face {
