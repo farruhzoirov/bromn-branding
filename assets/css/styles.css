@@ -88,6 +88,17 @@ img {
   height: 100%;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .header-intro-wrapper {
+    background-image: url("../img/main-bg@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
 .site-header {
   padding: 0.7rem;
   margin-bottom: 12rem;
