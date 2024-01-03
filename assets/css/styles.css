@@ -79,7 +79,7 @@ img {
 
 .header-intro-wrapper {
   padding-top: 2.5rem;
-  background-image: url("../img/main-bg.jpg");
+  background-image: url("../img/main-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -90,7 +90,7 @@ img {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .header-intro-wrapper {
-    background-image: url("../img/main-bg@2x.jpg");
+    background-image: url("../img/main-bg@2x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
