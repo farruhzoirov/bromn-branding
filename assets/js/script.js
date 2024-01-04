@@ -33,3 +33,10 @@ function changeSlide() {
 
 setInterval(changeSlide, 5000);
 
+
+
+const tickerTrack = document.querySelector('.ticker__track');
+for (let i = 0; i < 100; i++) {
+    tickerTrack.innerHTML += `<div class="ticker__item">Web dizayn</div>`
+}
+

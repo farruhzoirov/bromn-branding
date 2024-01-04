@@ -25,6 +25,7 @@
 :root {
   --some-text: #9954ff;
   --darker-color: #4918a6;
+  --ticker-color: #582D86;
 }
 
 html {
@@ -221,6 +222,7 @@ img {
 :root {
   --some-text: #9954ff;
   --darker-color: #4918a6;
+  --ticker-color: #582D86;
 }
 
 html {
@@ -277,8 +279,8 @@ img {
   flex-grow: 1;
 }
 
-.site-main__wrapper {
-  height: 400px;
+.site-main__actions {
+  display: flex;
 }
 
 .site-main__slider {
@@ -320,6 +322,53 @@ img {
   object-fit: cover;
 }
 
+.ticker {
+  position: relative;
+  z-index: 1;
+  width: 50vw;
+}
+
+.ticker__line {
+  position: absolute;
+  left: 0;
+  top: 20vh;
+  width: 100vw;
+  height: 50px;
+  transform: translateY(-1px);
+  background-color: var(--ticker-color);
+  overflow: hidden;
+}
+
+.ticker__track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  animation-name: ticker;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ticker__item {
+  flex-shrink: 0;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
@@ -347,6 +396,7 @@ img {
 :root {
   --some-text: #9954ff;
   --darker-color: #4918a6;
+  --ticker-color: #582D86;
 }
 
 html {
