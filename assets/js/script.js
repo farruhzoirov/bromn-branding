@@ -1,14 +1,18 @@
 "use strict"
+// Site main img slider
 const sliderContainer = document.querySelector('.site-main__slider');
 
 // Content for the slider
 const sliderContent = [
-    'https://picsum.photos/id/100/1500/600',
-    'https://picsum.photos/id/200/1500/600',
-    'https://picsum.photos/id/300/1500/600',
-    'https://picsum.photos/id/400/1500/600',
-    'https://picsum.photos/id/500/1500/600',
-    'https://picsum.photos/id/600/1500/600',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
+    'assets/img/slider-img.jpg',
 
 ];
 
@@ -16,7 +20,7 @@ const sliderContent = [
 sliderContent.forEach(content => {
     const sliderItem = document.createElement('div');
     sliderItem.classList.add('slider-item');
-    sliderItem.innerHTML = `<img src="${content}">`;
+    sliderItem.innerHTML = `<img loading="lazy" src="${content}" width="100%" height="100%">`;
     const imageItem = sliderItem.querySelector('img');
     imageItem.className = 'slider-image';
     sliderContainer.appendChild(sliderItem);
@@ -31,12 +35,12 @@ function changeSlide() {
 }
 
 
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 3000);
 
-
+// Ticker codes
 
 const tickerTrack = document.querySelector('.ticker__track');
 for (let i = 0; i < 100; i++) {
-    tickerTrack.innerHTML += `<div class="ticker__item">Web dizayn</div>`
+    tickerTrack.innerHTML += `<span class="ticker__item">Web dizayn</span>`
 }
 

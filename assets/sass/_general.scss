@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Degular';
   src: url("../fonts/Degular-Light.woff2") format("woff2"),
-  url("../fonts/Degular-Light.woff") format("woff");
+       url("../fonts/Degular-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Degular';
   src: url("../fonts/Degular-Medium.woff2") format("woff2"),
-  url("../fonts/Degular-Medium.woff") format("woff");
+       url("../fonts/Degular-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'Degular';
   src: url("../fonts/Degular-Semibold.woff2") format("woff2"),
-  url("../fonts/Degular-Semibold.woff") format("woff");
+       url("../fonts/Degular-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
@@ -48,6 +48,8 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: "Degular", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -74,6 +76,8 @@ a {
 
 button {
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 img {
   width: 100%;
@@ -89,6 +93,5 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 

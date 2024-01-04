@@ -37,6 +37,8 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: "Degular", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -62,6 +64,8 @@ a {
 
 button {
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 img {
@@ -99,13 +103,17 @@ img {
   }
 }
 .site-header {
-  padding: 0.7rem;
+  padding: 1rem;
   margin-bottom: 12rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
 }
 
 .flex-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -123,6 +131,12 @@ img {
 
 .header__logo:active {
   opacity: 0.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar__list {
@@ -154,10 +168,10 @@ img {
 
 .header__link {
   width: 100%;
-  max-width: 13rem;
-  height: 4rem;
+  max-width: 14rem;
+  height: 3.5rem;
   display: flex;
-  padding: 1.125rem 1.6875rem;
+  padding: 1.125rem 1.3875rem;
   margin-left: auto;
   justify-content: center;
   align-items: center;
@@ -234,6 +248,8 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: "Degular", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -259,6 +275,8 @@ a {
 
 button {
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 img {
@@ -281,12 +299,14 @@ img {
 
 .site-main__actions {
   display: flex;
+  align-items: flex-start;
+  margin-bottom: 7rem;
 }
 
 .site-main__slider {
   width: 100%;
   max-width: 50vw;
-  height: 50vh;
+  height: 80vh;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -317,23 +337,29 @@ img {
 }
 
 .slider-image {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .ticker {
   position: relative;
   z-index: 1;
   width: 50vw;
+  height: 3rem;
+  padding: 2rem;
 }
 
 .ticker__line {
   position: absolute;
   left: 0;
-  top: 20vh;
-  width: 100vw;
-  height: 50px;
+  top: 10vh;
+  width: 50vw;
+  height: 100%;
   transform: translateY(-1px);
   background-color: var(--ticker-color);
   overflow: hidden;
@@ -353,9 +379,9 @@ img {
 .ticker__item {
   flex-shrink: 0;
   margin: 0 15px;
-  font-size: 18px;
+  font-size: calc 1.25 rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @keyframes ticker {
@@ -369,6 +395,37 @@ img {
     transform: translateX(0);
   }
 }
+.progress__wrapper {
+  width: 36.0625rem;
+  height: 12.5rem;
+  flex-shrink: 0;
+}
+
+.progress__text {
+  color: #000;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.progress__opener {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.progress__opener button {
+  color: var(--some-text);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.progress__opener img {
+  width: 2.875rem;
+  height: 2.875rem;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
@@ -408,6 +465,8 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
   font-family: "Degular", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -433,6 +492,8 @@ a {
 
 button {
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 img {

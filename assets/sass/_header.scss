@@ -29,13 +29,17 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .site-header {
-  padding: 0.7rem;
+  padding: 1rem;
   margin-bottom: 12rem;
+  background-color: rgb(0,0,0,0.7);
+  position: sticky;
+  top: 0;
 }
 
 .flex-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -54,6 +58,11 @@ only screen and (                min-resolution: 2dppx) {
   opacity: 0.6;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .navbar__list {
   display: flex;
@@ -86,10 +95,10 @@ only screen and (                min-resolution: 2dppx) {
 
 .header__link {
   width: 100%;
-  max-width: 13rem;
-  height: 4rem;
+  max-width: 14rem;
+  height: 3.5rem;
   display: flex;
-  padding: 1.125rem 1.6875rem;
+  padding: 1.125rem 1.3875rem;
   margin-left: auto;
   justify-content: center;
   align-items: center;
