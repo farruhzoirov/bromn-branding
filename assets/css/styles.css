@@ -426,6 +426,18 @@ img {
   height: 2.875rem;
 }
 
+.carucel__item {
+  width: 100%;
+  max-width: 36rem;
+}
+.carucel__item strong {
+  color: #130c1c;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .carucel__circle {
   display: flex;
   align-items: center;
@@ -436,7 +448,6 @@ img {
   width: 100%;
   background-color: var(--darker-color);
 }
-
 .carucel__circle span {
   color: #F4F4F4;
   font-size: 3.84831rem;
