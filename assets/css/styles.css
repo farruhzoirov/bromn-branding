@@ -525,10 +525,23 @@ img {
   position: absolute;
   font-size: 20px;
   margin-top: 12rem;
-  right: 0 !important;
 }
 .splide__arrow svg {
   color: var(--darker-color);
+}
+
+.splide__arrow--prev {
+  background-color: var(--darker-color) !important;
+}
+.splide__arrow--prev svg {
+  color: var(--darker-color) !important;
+}
+
+.splide__arrow--next {
+  background-color: var(--darker-color) !important;
+}
+.splide__arrow--next svg {
+  color: var(--darker-color) !important;
 }
 
 /* Style pagination */
