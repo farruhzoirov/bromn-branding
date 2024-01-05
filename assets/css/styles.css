@@ -474,6 +474,7 @@ img {
 
 .tabs__list {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 
 .tabs__item:first-child .tabs__link {
