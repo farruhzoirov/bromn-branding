@@ -468,6 +468,10 @@ img {
   line-height: 110%;
 }
 
+.tabs-info {
+  margin-bottom: 1rem;
+}
+
 .tabs__list {
   display: flex;
 }
@@ -498,7 +502,11 @@ img {
 /* Style navigation arrows */
 .splide__arrow {
   font-size: 20px;
-  margin-top: -8rem;
+  margin-top: -10rem;
+  background-color: var(--some-text) !important;
+}
+.splide__arrow svg {
+  color: var(--darker-color);
 }
 
 /* Style pagination */
