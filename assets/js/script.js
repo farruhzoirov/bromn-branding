@@ -44,7 +44,12 @@ setInterval(changeSlide, 3000);
 
 const tickerTrack = document.querySelector('.ticker__track');
 for (let i = 0; i < 100; i++) {
-    tickerTrack.innerHTML += `<span class="ticker__item">Web dizayn</span>`
+    tickerTrack.innerHTML += `
+             <span class="ticker__item">Web dizayn</span>
+             <span class="ticker__item">Packaging dizayn</span>
+             <span class="ticker__item">Brand dizayn</span>
+             <span class="ticker__item">Grafik dizayn</span>
+       `
 }
 
 const slider = document.getElementById('slider');
