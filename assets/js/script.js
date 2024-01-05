@@ -56,7 +56,7 @@ let slideIndex = 0;
 
 new Splide('#splide-container', {
     type: 'loop',
-    speed: 1000,
+    speed: 800,
     autoplay: true,
     arrows: true,
     interval: 2000,
