@@ -1,5 +1,3 @@
-
-
 "use strict"
 
 // Site main img slider
