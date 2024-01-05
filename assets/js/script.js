@@ -56,15 +56,14 @@ let slideIndex = 0;
 
 new Splide('#splide-container', {
     type: 'loop',
-    speed: 800,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     interval: 2000,
     pauseOnHover: true,
     pauseOnFocus: true,
     perPage: 3,
     perMove: 1,
-    gap: '20px',
+    gap: '50px',
     pagination: false,
     breakpoints: {
         '1366': {
@@ -73,13 +72,15 @@ new Splide('#splide-container', {
         '970': {
             perPage: 2,
             gap: '10px',
-            arrows: false,
+            arrows: true,
         },
         '560': {
             perPage: 1,
-            arrows: false,
+            arrows: true,
         }
     }
 }).mount()
+
+
 
 

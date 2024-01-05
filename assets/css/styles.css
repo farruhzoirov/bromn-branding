@@ -70,6 +70,12 @@ button {
   cursor: pointer;
 }
 
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -107,7 +113,6 @@ img {
 .site-header {
   padding: 1rem;
   margin-bottom: 12rem;
-  background-color: rgba(0, 0, 0, 0.7);
   position: sticky;
   top: 0;
 }
@@ -283,6 +288,12 @@ button {
   cursor: pointer;
 }
 
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -354,14 +365,14 @@ img {
   position: relative;
   z-index: 1;
   width: 50vw;
-  height: 3rem;
-  padding: 2rem;
+  height: 2rem;
+  padding: 1.5rem;
 }
 
 .ticker__line {
   position: absolute;
   left: 0;
-  top: 10vh;
+  top: 15vh;
   width: 48.8vw;
   height: 100%;
   transform: translateY(-1px);
@@ -407,7 +418,7 @@ img {
 
 .progress__text {
   color: #000;
-  font-size: 1.875rem;
+  font-size: 1.575rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -439,7 +450,7 @@ img {
 
 .carucel__item {
   width: 100%;
-  max-width: 36rem;
+  max-width: 50rem;
 }
 .carucel__item strong {
   color: #130c1c;
@@ -477,34 +488,42 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.tabs__item {
+  width: 36rem;
+}
+
 .tabs__item:first-child .tabs__link {
   color: var(--tabs-active-color);
 }
 
 .tabs__item:not(:last-child) {
-  margin-right: 1.9rem;
+  margin-right: 1rem;
 }
 
 .tabs__link {
   color: var(--tabs-color);
-  font-size: 1.375rem;
+  font-size: 1.175rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  white-space: nowrap;
 }
 
 #splide-container {
   max-width: 100%;
   width: 100%;
   margin: 5rem auto;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 /* Style navigation arrows */
 .splide__arrow {
+  display: block;
+  position: absolute;
   font-size: 20px;
-  margin-top: -10rem;
+  margin-top: 12rem;
   background-color: var(--some-text) !important;
+  right: 0 !important;
 }
 .splide__arrow svg {
   color: var(--darker-color);
@@ -512,10 +531,10 @@ img {
 
 /* Style pagination */
 .splide__pagination__page {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 0.5rem;
   background-color: var(--some-text);
   cursor: pointer;
 }
@@ -594,6 +613,12 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 0;
 }
 
 img {
