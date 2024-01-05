@@ -26,6 +26,8 @@
   --some-text: #9954ff;
   --darker-color: #4918a6;
   --ticker-color: #582D86;
+  --tabs-active-color: #9954ff;
+  --tabs-color:rgba(19, 12, 28, 0.3);
 }
 
 html {
@@ -237,6 +239,8 @@ img {
   --some-text: #9954ff;
   --darker-color: #4918a6;
   --ticker-color: #582D86;
+  --tabs-active-color: #9954ff;
+  --tabs-color:rgba(19, 12, 28, 0.3);
 }
 
 html {
@@ -371,7 +375,7 @@ img {
   justify-content: center;
   height: 100%;
   animation-name: ticker;
-  animation-duration: 60s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -426,6 +430,13 @@ img {
   height: 2.875rem;
 }
 
+.progress__carucel {
+  display: flex;
+}
+.progress__carucel section {
+  margin-right: 2.5rem;
+}
+
 .carucel__item {
   width: 100%;
   max-width: 36rem;
@@ -456,6 +467,51 @@ img {
   line-height: 110%;
 }
 
+.tabs__list {
+  display: flex;
+}
+
+.tabs__item:first-child .tabs__link {
+  color: var(--tabs-active-color);
+}
+
+.tabs__item:not(:last-child) {
+  margin-right: 1.9rem;
+}
+
+.tabs__link {
+  color: var(--tabs-color);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#splide-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 5rem auto;
+}
+
+/* Style navigation arrows */
+.splide__arrow {
+  font-size: 20px;
+}
+
+/* Style pagination */
+.splide__pagination__page {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: var(--some-text);
+  cursor: pointer;
+}
+
+.splide__pagination__page.splide__pagination__page--active {
+  background-color: white;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
@@ -484,6 +540,8 @@ img {
   --some-text: #9954ff;
   --darker-color: #4918a6;
   --ticker-color: #582D86;
+  --tabs-active-color: #9954ff;
+  --tabs-color:rgba(19, 12, 28, 0.3);
 }
 
 html {
