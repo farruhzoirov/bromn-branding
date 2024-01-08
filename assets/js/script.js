@@ -5,15 +5,15 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 // Content for the slider
 const sliderContent = [
-    'https://picsum.photos/id/100/800/600',
-    'https://picsum.photos/id/210/800/600',
-    'https://picsum.photos/id/30/800/600',
-    'https://picsum.photos/id/1003/800/600',
-    'https://picsum.photos/id/1002/800/600',
-    'https://picsum.photos/id/1004/800/600',
-    'https://picsum.photos/id/1005/800/600',
-    'https://picsum.photos/id/1003/800/600',
-    'https://picsum.photos/id/1001/800/600',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
 
 ];
 

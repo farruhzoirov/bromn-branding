@@ -113,8 +113,6 @@ img {
 .site-header {
   padding: 1rem;
   margin-bottom: 12rem;
-  position: sticky;
-  top: 0;
 }
 
 .flex-container {
@@ -453,7 +451,7 @@ img {
 
 .carucel__item {
   width: 100%;
-  max-width: 50rem;
+  max-width: 100%;
 }
 .carucel__item strong {
   color: #130c1c;
@@ -461,6 +459,16 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+#splide-container-slide01, #splide-container-slide02, #splide-container-slide03, #splide-container-slide04 {
+  width: 100% !important;
+  max-width: 36rem !important;
+}
+
+.slide__wrapper {
+  width: 100%;
+  max-width: 100%;
 }
 
 .carucel__circle {
@@ -485,6 +493,7 @@ img {
 
 .tabs-info {
   margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
 .tabs__list {
@@ -514,6 +523,10 @@ img {
   width: 100%;
   margin: 5rem auto;
   padding: 1.2rem;
+}
+
+.splide-track {
+  overflow-x: hidden !important;
 }
 
 /* Style navigation arrows */
@@ -610,6 +623,9 @@ img {
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   flex-shrink: 0;
+}
+
+.success__result {
   background-color: var(--darker-color);
   color: #f4f4f4;
   font-size: 5rem;
