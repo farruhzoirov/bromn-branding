@@ -66,6 +66,9 @@ new Splide('#splide-container', {
     gap: '50px',
     pagination: false,
     breakpoints: {
+        '1920': {
+            perPage:6
+        },
         '1366': {
             perPage: 3
         },

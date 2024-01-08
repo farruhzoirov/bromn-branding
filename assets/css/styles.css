@@ -76,11 +76,6 @@ button:focus {
   outline: 0;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
 .container {
   width: 100%;
   max-width: 92.5rem;
@@ -290,11 +285,6 @@ button:hover,
 button:focus {
   opacity: 0.9;
   outline: 0;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
 }
 
 .container {
@@ -615,6 +605,10 @@ img {
   line-height: normal;
 }
 
+.success {
+  margin-bottom: 5rem;
+}
+
 .success__inner:last-child {
   display: flex;
   flex-direction: column;
@@ -641,6 +635,39 @@ img {
   font-weight: 500;
   line-height: normal;
   box-shadow: 0.4rem 0.4rem 0 #9954FF;
+}
+
+.project-info__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.project-info__top__img {
+  display: block;
+  width: 24.08444rem;
+  height: 23.70781rem;
+  margin-left: auto;
+}
+
+.top-image-wrapper {
+  width: 30%;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  flex-shrink: 0;
+}
+
+.projects__card {
+  width: 100%;
+  max-width: 31.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.auto {
+  align-self: flex-end;
 }
 
 @font-face {
@@ -719,11 +746,6 @@ button:hover,
 button:focus {
   opacity: 0.9;
   outline: 0;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
 }
 
 .container {

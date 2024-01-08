@@ -358,6 +358,9 @@
 
 }
 
+.success {
+  margin-bottom: 5rem;
+}
 
 .success__inner:last-child {
   display: flex;
@@ -388,3 +391,45 @@
   box-shadow: 0.4rem 0.4rem 0 #9954FF;
 }
 
+//Projects Info styles
+.project-info__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+
+  &__img {
+    display: block;
+    width: 24.08444rem;
+    height: 23.70781rem;
+    margin-left: auto;
+  }
+}
+
+.top-image-wrapper {
+  width: 30%;
+}
+
+
+.projects__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  flex-shrink: 0;
+
+}
+
+
+
+
+
+.projects__card {
+  width: 100%;
+  max-width: 31.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.auto {
+  align-self: flex-end;
+}
