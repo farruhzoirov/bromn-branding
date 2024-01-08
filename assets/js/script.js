@@ -87,12 +87,27 @@ new Splide('#splide-container', {
 
 const splideItems = document.querySelectorAll('.splide__slide');
 
-
 for (const splideItem of splideItems) {
     splideItem.setAttribute('id','splide__item');
-
-    console.log(splideItem)
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let header = document.querySelector(".site-header");
+    let headerHeight = header.offsetHeight;
+
+    window.addEventListener("scroll", function () {
+        let scrollPosition = window.scrollY;
+
+        if (scrollPosition > headerHeight) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    });
+});
+
+
 
 
 

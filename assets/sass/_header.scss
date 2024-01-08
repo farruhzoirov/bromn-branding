@@ -31,7 +31,15 @@ only screen and (                min-resolution: 2dppx) {
 .site-header {
   padding: 1rem;
   margin-bottom: 12rem;
+  transition: all 0.7s ease;
 
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(81, 64, 128, 1);
 }
 
 .flex-container {
