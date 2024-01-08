@@ -82,5 +82,14 @@ new Splide('#splide-container', {
 }).mount()
 
 
+const splideItems = document.querySelectorAll('.splide__slide');
+
+
+for (const splideItem of splideItems) {
+    splideItem.setAttribute('id','splide__item');
+
+    console.log(splideItem)
+}
+
 
 
