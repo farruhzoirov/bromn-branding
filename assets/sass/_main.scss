@@ -392,24 +392,31 @@
 }
 
 //Projects Info styles
+
+//Projects top styles
 .project-info__top {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
 
 
 
   &__img {
     display: block;
-    width: 24.08444rem;
+    width: 100%;
     height: 23.70781rem;
     margin-left: auto;
   }
 }
 
+
 .top-image-wrapper {
   width: 30%;
 }
+
+
 
 
 .projects__wrapper {
@@ -422,14 +429,94 @@
 
 
 
+.projects__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  a {
+    color: var(--some-text);
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  img {
+    transform: rotate(-90deg);
+  }
+}
+
+
+
 
 
 .projects__card {
   width: 100%;
   max-width: 31.25rem;
-  margin-bottom: 1.5rem;
+
+  h2 {
+    color: var(--black-like-color);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  p {
+    color: var(--black-like-color);
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+
+.projects__card:nth-child(1) {
+  margin-bottom: 1.2rem;
 }
 
 .auto {
   align-self: flex-end;
 }
+
+
+//Projects bottom styles
+
+.project-info__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 23.70781rem;
+    margin-left: auto;
+
+  }
+}
+
+
+.bottom-image-wrapper {
+   align-self: flex-end;
+}
+
+//Our customers styles
+.customers__wrapper {
+  background-color: var(--some-text);
+  height: 400px;
+}
+
+hr {
+  width: 100%;
+  max-width: 6rem;
+  height: 0.125rem;
+  flex-shrink: 0;
+  background-color: #f4f4f4;
+}
+
+
+
+

@@ -28,6 +28,7 @@
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
+  --black-like-color:#130c1c;
 }
 
 html {
@@ -239,6 +240,7 @@ button:focus {
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
+  --black-like-color:#130c1c;
 }
 
 html {
@@ -641,10 +643,12 @@ button:focus {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
 }
 .project-info__top__img {
   display: block;
-  width: 24.08444rem;
+  width: 100%;
   height: 23.70781rem;
   margin-left: auto;
 }
@@ -660,14 +664,76 @@ button:focus {
   flex-shrink: 0;
 }
 
+.projects__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.projects__link a {
+  color: var(--some-text);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.projects__link img {
+  transform: rotate(-90deg);
+}
+
 .projects__card {
   width: 100%;
   max-width: 31.25rem;
-  margin-bottom: 1.5rem;
+}
+.projects__card h2 {
+  color: var(--black-like-color);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.projects__card p {
+  color: var(--black-like-color);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.projects__card:nth-child(1) {
+  margin-bottom: 1.2rem;
 }
 
 .auto {
   align-self: flex-end;
+}
+
+.project-info__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.project-info__bottom__img {
+  display: block;
+  width: 100%;
+  height: 23.70781rem;
+  margin-left: auto;
+}
+
+.bottom-image-wrapper {
+  align-self: flex-end;
+}
+
+.customers__wrapper {
+  background-color: var(--some-text);
+  height: 400px;
+}
+
+hr {
+  width: 100%;
+  max-width: 6rem;
+  height: 0.125rem;
+  flex-shrink: 0;
+  background-color: #f4f4f4;
 }
 
 @font-face {
@@ -700,6 +766,7 @@ button:focus {
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
+  --black-like-color:#130c1c;
 }
 
 html {
