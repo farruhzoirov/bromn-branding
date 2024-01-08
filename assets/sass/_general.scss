@@ -38,7 +38,8 @@
    --ticker-color: #582D86;
    --tabs-active-color: #9954ff;
    --tabs-color:rgba(19, 12, 28, 0.3);
-    --black-like-color:#130c1c;
+   --black-like-color:#130c1c;
+   --lighter-text-color:rgba(19, 12, 28, 0.4);
 
 }
 
@@ -63,6 +64,7 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   max-height: 100vh;
+  width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6,ul,li,p,a {

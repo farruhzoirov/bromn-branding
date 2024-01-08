@@ -563,6 +563,7 @@
 .services__mentioned {
   display: flex;
   align-items: center;
+  margin-bottom: 3.5rem;
 
   &::before {
     display: block;
@@ -593,15 +594,30 @@
   position: relative;
   counter-increment: services;
 
-  &::before {
+
+
+}
+
+
+
+.service__item--active {
+   .service__item::before {
+     color: var(--black-like-color);
+   }
+
+  .service__link {
+    color: var(--black-like-color);
+  }
+
+  .service__link::before {
     content: counter(services, decimal-leading-zero);
     width: 1.1rem;
     height: 1.1rem;
     position: absolute;
-    top: -1rem;
-    left: -1rem;
+    top: -0.2rem;
+    left: -2rem;
     color: var(--black-like-color);
-    font-size: 1.125rem;
+    font-size: 1.325rem;
     font-style: normal;
     font-weight: 300;
     line-height: 107%;
@@ -610,11 +626,25 @@
 }
 
 .service__link {
-  color: var(--black-like-color);
+  color:var(--lighter-text-color);
   font-size: 4.375rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  &::before {
+    content: counter(services, decimal-leading-zero);
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: -0.2rem;
+    left: -2rem;
+    color: var(--lighter-text-color);
+    font-size: 1.325rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 107%;
+  }
 }
 
 

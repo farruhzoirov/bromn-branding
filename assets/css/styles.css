@@ -29,6 +29,7 @@
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
   --black-like-color:#130c1c;
+  --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
 
 html {
@@ -50,6 +51,8 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   max-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, p, a {
@@ -249,6 +252,7 @@ button:focus {
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
   --black-like-color:#130c1c;
+  --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
 
 html {
@@ -270,6 +274,8 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   max-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, p, a {
@@ -786,6 +792,7 @@ button:focus {
 .services__mentioned {
   display: flex;
   align-items: center;
+  margin-bottom: 3.5rem;
 }
 .services__mentioned::before {
   display: block;
@@ -813,26 +820,26 @@ button:focus {
   position: relative;
   counter-increment: services;
 }
-.service__item::before {
-  content: counter(services, decimal-leading-zero);
-  width: 1.1rem;
-  height: 1.1rem;
-  position: absolute;
-  top: -1rem;
-  left: -1rem;
-  color: var(--black-like-color);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 107%;
-}
 
 .service__link {
-  color: var(--black-like-color);
+  color: var(--lighter-text-color);
   font-size: 4.375rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.service__link::before {
+  content: counter(services, decimal-leading-zero);
+  width: 1.1rem;
+  height: 1.1rem;
+  position: absolute;
+  top: -0.2rem;
+  left: -2rem;
+  color: var(--lighter-text-color);
+  font-size: 1.325rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 107%;
 }
 
 @font-face {
@@ -866,6 +873,7 @@ button:focus {
   --tabs-active-color: #9954ff;
   --tabs-color:rgba(19, 12, 28, 0.3);
   --black-like-color:#130c1c;
+  --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
 
 html {
@@ -887,6 +895,8 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   max-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, p, a {

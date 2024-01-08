@@ -54,6 +54,9 @@ const slider = document.getElementById('slider');
 let slideIndex = 0;
 
 
+
+
+
 new Splide('#splide-container', {
     type: 'loop',
     autoplay: false,
@@ -66,9 +69,7 @@ new Splide('#splide-container', {
     gap: '50px',
     pagination: false,
     breakpoints: {
-        '1920': {
-            perPage:6
-        },
+
         '1366': {
             perPage: 3
         },
@@ -91,7 +92,6 @@ for (const splideItem of splideItems) {
     splideItem.setAttribute('id','splide__item');
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
     let header = document.querySelector(".site-header");
     let headerHeight = header.offsetHeight;
@@ -105,7 +105,19 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.remove("sticky");
         }
     });
+
+    const serviceItems = document.querySelectorAll('.service__item');
+
+
+    serviceItems.forEach((item) => {
+        item.addEventListener('click' ,(e) => {
+            item.classList.add('service__item--active');
+        })
+
+    })
+
 });
+
 
 
 
