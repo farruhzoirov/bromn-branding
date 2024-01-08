@@ -18,6 +18,11 @@ const sliderContent = [
 ];
 
 
+const trickerArrow = [
+    '../assets/img/opener-arrow.svg'
+]
+
+
 sliderContent.forEach(content => {
     const sliderItem = document.createElement('div');
     sliderItem.classList.add('slider-item');
@@ -47,6 +52,20 @@ for (let i = 0; i < 50; i++) {
              <span class="ticker__item">Packaging dizayn</span>
              <span class="ticker__item">Brand dizayn</span>
              <span class="ticker__item">Grafik dizayn</span>
+       `
+}
+
+const successTickerTrack = document.querySelector('.success-ticker__track');
+for (let i = 0; i < 50; i++) {
+    successTickerTrack.innerHTML += `
+             <span class="success-ticker__item">Brending OVARD sovrindori</span>
+             <img src="${trickerArrow[0]}" alt="">
+             <span class="success-ticker__item">TAFning branding yo’nalishida 1-o’rin</span>
+             <img src="${trickerArrow[0]}" alt="">
+             <span class="success-ticker__item">Amerikada 2-o’ring</span>
+             <img src="${trickerArrow[0]}" alt="">
+             <span class="success-ticker__item">TAFning branding yo’nalishida 1-o’rin</span>
+             <img src="${trickerArrow[0]}" alt="">
        `
 }
 
