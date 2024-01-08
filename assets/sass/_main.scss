@@ -87,12 +87,16 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+
+  img {
+    transform: rotate(-90deg);
+  }
 }
 
 .ticker__item {
   flex-shrink: 0;
   margin: 0 1rem;
-  font-size: calc ( 24 / 16) rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
 }
@@ -775,7 +779,7 @@
 .success-ticker__item {
   flex-shrink: 0;
   margin: 0 1rem;
-  font-size: calc ( 24 / 16) rem;
+  font-size:2rem;
   font-weight: 500;
   color: #ffffff;
 }

@@ -395,11 +395,14 @@ button:focus {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.ticker__track img {
+  transform: rotate(-90deg);
+}
 
 .ticker__item {
   flex-shrink: 0;
   margin: 0 1rem;
-  font-size: calc 1.5 rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
 }
@@ -975,7 +978,7 @@ button:focus {
 .success-ticker__item {
   flex-shrink: 0;
   margin: 0 1rem;
-  font-size: calc 1.5 rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #ffffff;
 }

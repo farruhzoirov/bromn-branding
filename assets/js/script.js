@@ -49,9 +49,13 @@ const tickerTrack = document.querySelector('.ticker__track');
 for (let i = 0; i < 50; i++) {
     tickerTrack.innerHTML += `
              <span class="ticker__item">Web dizayn</span>
+             <img src="${trickerArrow[0]}" alt="">
              <span class="ticker__item">Packaging dizayn</span>
+             <img src="${trickerArrow[0]}" alt="">
              <span class="ticker__item">Brand dizayn</span>
+             <img src="${trickerArrow[0]}" alt="">
              <span class="ticker__item">Grafik dizayn</span>
+             <img src="${trickerArrow[0]}" alt="">
        `
 }
 
