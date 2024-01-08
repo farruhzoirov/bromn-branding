@@ -879,6 +879,14 @@ button:focus {
   width: 100%;
   max-width: 35rem;
 }
+.services__type p {
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
 
 .type__tabs {
   display: flex;
@@ -905,6 +913,21 @@ button:focus {
   font-weight: 400;
   line-height: normal;
   white-space: nowrap;
+}
+
+.using-services {
+  display: flex;
+  align-items: center;
+}
+.using-services__link {
+  color: var(--some-text);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.using-services img {
+  transform: rotate(-90deg);
 }
 
 @font-face {
