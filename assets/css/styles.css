@@ -790,6 +790,10 @@ button:focus {
   margin-bottom: 6rem;
 }
 
+.services {
+  margin-bottom: 8.5rem;
+}
+
 .services__inner {
   display: flex;
   align-items: flex-start;
