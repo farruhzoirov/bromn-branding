@@ -111,7 +111,7 @@ button:focus {
 .site-header {
   padding: 1rem;
   margin-bottom: 12rem;
-  transition: all 0.7s ease;
+  transition: all 1s ease;
 }
 
 .sticky {
@@ -998,6 +998,26 @@ button:focus {
     transform: translateX(100%);
   }
 }
+.portolio__mentioned {
+  display: flex;
+  align-items: center;
+}
+.portolio__mentioned::before {
+  display: block;
+  width: 6rem;
+  height: 0.125rem;
+  content: "";
+  margin-left: -6rem;
+  background-color: var(--black-like-color);
+}
+.portolio__mentioned strong {
+  color: var(--black-like-color);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");

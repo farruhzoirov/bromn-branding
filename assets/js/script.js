@@ -92,7 +92,6 @@ new Splide('#splide-container', {
     gap: '50px',
     pagination: false,
     breakpoints: {
-
         '1366': {
             perPage: 3
         },
@@ -107,6 +106,35 @@ new Splide('#splide-container', {
         }
     }
 }).mount()
+
+
+new Splide('#portfolio-container', {
+    type: 'loop',
+    autoplay: false,
+    arrows: true,
+    interval: 2000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    perPage: 3,
+    perMove: 1,
+    gap: '50px',
+    pagination: false,
+    breakpoints: {
+        '1366': {
+            perPage: 3
+        },
+        '970': {
+            perPage: 2,
+            gap: '10px',
+            arrows: true,
+        },
+        '560': {
+            perPage: 1,
+            arrows: true,
+        }
+    }
+}).mount()
+
 
 
 const splideItems = document.querySelectorAll('.splide__slide');
@@ -136,9 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.addEventListener('click' ,(e) => {
             item.classList.add('service__item--active');
         })
-
     })
-
 });
 
 
