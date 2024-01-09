@@ -112,7 +112,7 @@ new Splide('#portfolio-container', {
     type: 'loop',
     autoplay: true,
     arrows: true,
-    interval: 1000,
+    interval: 1500,
     pauseOnHover: true,
     pauseOnFocus: true,
     perPage: 3,
