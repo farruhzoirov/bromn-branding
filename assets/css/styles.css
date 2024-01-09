@@ -210,11 +210,15 @@ button:focus {
 .site-intro__wrapper {
   max-width: 50rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
 }
 
 .site-intro__title {
   color: #ffffff;
-  font-size: 4.375rem;
+  font-size: 4.675rem;
   font-style: normal;
   font-weight: 600;
   line-height: 107%;
