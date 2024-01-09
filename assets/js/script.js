@@ -66,7 +66,7 @@ for (let i = 0; i < 50; i++) {
              <img src="${trickerArrow[0]}" alt="">
              <span class="success-ticker__item">TAFning branding yo’nalishida 1-o’rin</span>
              <img src="${trickerArrow[0]}" alt="">
-             <span class="success-ticker__item">Amerikada 2-o’ring</span>
+             <span class="success-ticker__item">Amerikada 2-o’rin</span>
              <img src="${trickerArrow[0]}" alt="">
              <span class="success-ticker__item">TAFning branding yo’nalishida 1-o’rin</span>
              <img src="${trickerArrow[0]}" alt="">
@@ -110,14 +110,14 @@ new Splide('#splide-container', {
 
 new Splide('#portfolio-container', {
     type: 'loop',
-    autoplay: false,
+    autoplay: true,
     arrows: true,
-    interval: 2000,
+    interval: 1000,
     pauseOnHover: true,
     pauseOnFocus: true,
     perPage: 3,
     perMove: 1,
-    gap: '50px',
+    gap: '20px',
     pagination: false,
     breakpoints: {
         '1366': {
@@ -166,6 +166,10 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     })
 });
+
+
+
+
 
 
 

@@ -94,7 +94,7 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  min-height: 50rem;
+  min-height: 100vh;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -948,10 +948,10 @@ button:focus {
 .success-ticker {
   position: relative;
   z-index: 1;
-  width: 100vw;
+  width: 99vw;
   height: 2rem;
   padding: 1.5rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 12.4rem;
 }
 
 .success-ticker__line {
@@ -998,9 +998,18 @@ button:focus {
     transform: translateX(100%);
   }
 }
+.portfolio__slider {
+  margin-bottom: 3rem;
+}
+
+.splide__track {
+  margin-bottom: 3rem;
+}
+
 .portolio__mentioned {
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .portolio__mentioned::before {
   display: block;
@@ -1016,6 +1025,79 @@ button:focus {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.portfolio__inner span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--black-like-color);
+  color: #f4f4f4;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107%;
+  margin-bottom: 0.6rem;
+  margin-top: 1rem;
+}
+.portfolio__inner h3 {
+  color: var(--black-like-color);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 107%;
+}
+.portfolio__inner p {
+  color: var(--color-0, #130C1C);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 107%;
+}
+
+.portfolio__more {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.portfolio__more a {
+  color: var(--some-text);
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.portfolio__more img {
+  transform: rotate(-90deg);
+}
+
+.changeable-text__inner {
+  width: 100%;
+  max-width: 82rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.changeable-text__inner img:first-child {
+  position: absolute;
+  top: -3rem;
+}
+.changeable-text__inner img:nth-child(2) {
+  position: absolute;
+  bottom: -2rem;
+  right: 2rem;
+  transform: rotate(-180deg);
+}
+.changeable-text__inner strong {
+  color: #000;
+  font-size: 4.85538rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 @font-face {
