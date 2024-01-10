@@ -330,11 +330,12 @@ button:focus {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+  padding-bottom: 4rem;
 }
 
 .site-main__slider::-webkit-scrollbar {
   width: 0.2rem;
-  height: 0.4rem;
+  height: 0.8rem;
   border-radius: 0.5rem;
 }
 
@@ -514,7 +515,7 @@ button:focus {
   margin-bottom: 1rem;
   font-size: 1.25rem;
   width: 100%;
-  max-width: 90%;
+  max-width: 36rem;
 }
 
 .tabs__list {
@@ -561,8 +562,8 @@ button:focus {
 }
 
 .splide__arrow--prev {
-  width: 2.5rem !important;
-  height:1.25rem !important;
+  width: calc 2.5 rem !important;
+  height: calc 1.25 rem !important;
   background-color: transparent !important;
   background-image: url("../img/arrow-to-left.svg") !important;
   background-repeat: no-repeat !important;
@@ -578,8 +579,8 @@ button:focus {
 }
 
 .splide__arrow--next {
-  width: 2.5rem !important;
-  height: 1.25rem !important;
+  width: calc 2.5 rem !important;
+  height: calc 1.25 rem !important;
   background-color: transparent !important;
   background-image: url("../img/arrow-to-right.svg") !important;
   background-repeat: no-repeat !important;
@@ -615,7 +616,7 @@ button:focus {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 33.3333333333%;
+  max-width: calc 33.3333333333%;
   min-height: 20rem;
   margin-right: 2.5rem;
   height: 100%;
@@ -764,6 +765,7 @@ button:focus {
 
 .customers__mentioned {
   position: relative;
+  left: 0;
   display: flex;
   align-items: center;
   width: 100%;
@@ -774,7 +776,7 @@ button:focus {
   width: 6rem;
   height: 0.125rem;
   content: "";
-  margin-left: -5.5rem;
+  margin-left: -7vw;
   margin-right: 1rem;
   background-color: #fff;
 }
@@ -785,6 +787,7 @@ button:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+  position: absolute;
 }
 
 .brands__list {
@@ -1034,17 +1037,29 @@ button:focus {
   line-height: normal;
 }
 
+.splide__item-2 {
+  width: 100% !important;
+  max-width: 25rem !important;
+}
+
+.portfolio__inner {
+  width: 100%;
+}
+.portfolio__inner img {
+  width: 100%;
+  height: 100%;
+}
 .portfolio__inner span {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.0625rem;
-  height: 2.0625rem;
+  width: 3.0625rem;
+  height: 3.0625rem;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: var(--black-like-color);
   color: #f4f4f4;
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 107%;
@@ -1059,7 +1074,7 @@ button:focus {
   line-height: 107%;
 }
 .portfolio__inner p {
-  color: var(--black-like-color);
+  color: var(--color-0, #130C1C);
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
@@ -1121,6 +1136,11 @@ button:focus {
   }
   to {
     background-position: 0;
+  }
+}
+@media screen and (max-width: 96.75rem) {
+  .customers-wrapper .container {
+    max-width: 81.25rem;
   }
 }
 @font-face {

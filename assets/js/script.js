@@ -136,16 +136,17 @@ new Splide('#portfolio-container', {
 }).mount()
 
 
-
-const splideItems = document.querySelectorAll('.splide__slide');
+const splideContainer = document.getElementById('splide-container');
+const splideItems = splideContainer.querySelectorAll('.splide__slide');
 
 for (const splideItem of splideItems) {
     splideItem.setAttribute('id','splide__item');
 }
-// const projectItems = document.querySelectorAll('.splide__slide');
-// for (const splideItem of splideItems) {
-//     splideItem.classList.add("splide__item-2");
-// }
+const portfolioSlider = document.querySelector('.portfolio__slider');
+const projectItems = portfolioSlider.querySelectorAll('.splide__slide');
+for (const projectItem of projectItems) {
+    projectItem.classList.add("splide__item-2");
+}
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     let header = document.querySelector(".site-header");
