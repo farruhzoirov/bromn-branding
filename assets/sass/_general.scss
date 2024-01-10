@@ -1,3 +1,4 @@
+@import "media";
 //Fonts
 @font-face {
   font-family: 'Degular';
@@ -107,4 +108,9 @@ button:focus {
   margin-right: auto;
 }
 
-
+@include media(94.75rem) {
+  .container {
+    width: 100%;
+    max-width: 83.25rem;
+  }
+}
