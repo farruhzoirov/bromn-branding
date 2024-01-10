@@ -110,7 +110,6 @@ button:focus {
 }
 .site-header {
   padding: 1rem;
-  margin-bottom: 12rem;
   transition: all 1s ease;
 }
 
@@ -208,12 +207,12 @@ button:focus {
 }
 
 .site-intro__wrapper {
-  max-width: 50rem;
+  max-width: 60%;
   width: 100%;
+  height: calc(100vh - 88px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
 }
 
 .site-intro__title {
@@ -478,6 +477,10 @@ button:focus {
   margin-right: 1.5rem;
 }
 
+#splide-container {
+  margin: 5rem 0 !important;
+}
+
 .slide__wrapper {
   width: 100%;
   max-width: 36rem;
@@ -511,7 +514,7 @@ button:focus {
   margin-bottom: 1rem;
   font-size: 1.25rem;
   width: 100%;
-  max-width: 36rem;
+  max-width: 90%;
 }
 
 .tabs__list {
@@ -558,8 +561,8 @@ button:focus {
 }
 
 .splide__arrow--prev {
-  width: calc 2.5 rem !important;
-  height: calc 1.25 rem !important;
+  width: 2.5rem !important;
+  height:1.25rem !important;
   background-color: transparent !important;
   background-image: url("../img/arrow-to-left.svg") !important;
   background-repeat: no-repeat !important;
@@ -575,8 +578,8 @@ button:focus {
 }
 
 .splide__arrow--next {
-  width: calc 2.5 rem !important;
-  height: calc 1.25 rem !important;
+  width: 2.5rem !important;
+  height: 1.25rem !important;
   background-color: transparent !important;
   background-image: url("../img/arrow-to-right.svg") !important;
   background-repeat: no-repeat !important;
@@ -612,7 +615,7 @@ button:focus {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  max-width: calc 33.3333333333%;
+  max-width: 33.3333333333%;
   min-height: 20rem;
   margin-right: 2.5rem;
   height: 100%;
@@ -1056,7 +1059,7 @@ button:focus {
   line-height: 107%;
 }
 .portfolio__inner p {
-  color: var(--color-0, #130C1C);
+  color: var(--black-like-color);
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
@@ -1104,8 +1107,22 @@ button:focus {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  transition: color 0.3s ease;
+  position: relative;
+  background-image: linear-gradient(to right, black, gray);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientSlide 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
+@keyframes gradientSlide {
+  from {
+    background-position: 100%;
+  }
+  to {
+    background-position: 0;
+  }
+}
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");
@@ -1256,6 +1273,12 @@ button:focus {
   width: 9rem;
   height: 3.1rem;
   margin-right: 6rem;
+}
+
+#splide__item-2 {
+  width: 100% !important;
+  max-width: 25rem !important;
+  margin-right: 1.5rem;
 }
 
 @font-face {

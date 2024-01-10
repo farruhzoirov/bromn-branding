@@ -30,7 +30,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .site-header {
   padding: 1rem;
-  margin-bottom: 12rem;
   transition: all 1s ease;
 
 }
@@ -131,12 +130,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .site-intro__wrapper {
-  max-width: 50rem;
+  max-width: 60%;
   width: 100%;
+  height: calc(100vh - 88px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
 }
 
 .site-intro__title {

@@ -142,32 +142,34 @@ const splideItems = document.querySelectorAll('.splide__slide');
 for (const splideItem of splideItems) {
     splideItem.setAttribute('id','splide__item');
 }
+// const projectItems = document.querySelectorAll('.splide__slide');
+// for (const splideItem of splideItems) {
+//     splideItem.classList.add("splide__item-2");
+// }
 
-document.addEventListener("DOMContentLoaded", function () {
-    let header = document.querySelector(".site-header");
-    let headerHeight = header.offsetHeight;
-
-    window.addEventListener("scroll", function () {
-        let scrollPosition = window.scrollY;
-
-        if (scrollPosition > headerHeight) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    });
-
-    const serviceItems = document.querySelectorAll('.service__item');
-
-
-    serviceItems.forEach((item) => {
-        item.addEventListener('click' ,(e) => {
-            item.classList.add('service__item--active');
-        })
-    })
-});
-
-
+// document.addEventListener("DOMContentLoaded", function () {
+//     let header = document.querySelector(".site-header");
+//     let headerHeight = header.offsetHeight;
+//
+//     window.addEventListener("scroll", function () {
+//         let scrollPosition = window.scrollY;
+//
+//         if (scrollPosition > headerHeight) {
+//             header.classList.add("sticky");
+//         } else {
+//             header.classList.remove("sticky");
+//         }
+//     });
+//
+//     const serviceItems = document.querySelectorAll('.service__item');
+//
+//
+//     serviceItems.forEach((item) => {
+//         item.addEventListener('click' ,(e) => {
+//             item.classList.add('service__item--active');
+//         })
+//     })
+// });
 
 
 
