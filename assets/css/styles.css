@@ -431,7 +431,7 @@ button:focus {
     transform: translateX(50%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 }
 .progress__wrapper {
@@ -1232,6 +1232,7 @@ button:focus {
 
 .switch-label {
   display: block;
+  cursor: pointer;
 }
 
 .switch-label:not(:last-child) {
@@ -1304,6 +1305,11 @@ button:focus {
 
 .switch-input:checked + .switch__inner {
   background-color: var(--some-text);
+  color: #f4f4f4;
+}
+
+.switch-input:checked + .switch__inner span {
+  color: #f4f4f4;
 }
 
 .form__submit__button {
