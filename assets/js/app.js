@@ -1,3 +1,20 @@
+"use strict"
+
+const togglerBtn = document.querySelector('.header__toggler');
+const headerSidebar = document.querySelector('.header__sidebar');
+const sidebarCloser = headerSidebar.querySelector('.sidebar__closer');
+if(togglerBtn) {
+    togglerBtn.addEventListener('click', () => {
+        headerSidebar.style.left = '0';
+    })
+}
+
+if(sidebarCloser) {
+    sidebarCloser.addEventListener('click', () => {
+        headerSidebar.style.left = '-120%';
+    })
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const firstStrong = document.getElementById('firstStrong');
     const secondStrong = document.getElementById('secondStrong');

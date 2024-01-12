@@ -114,3 +114,9 @@ button:focus {
     max-width: 83.25rem;
   }
 }
+
+@include media(1100px) {
+  html {
+    font-size: 14px;
+  }
+}
