@@ -250,7 +250,6 @@ only screen and (                min-resolution: 2dppx) {
     background-repeat: no-repeat;
     background-position: center center;
     height: 40rem;
-
     background-attachment: fixed;
   }
 
@@ -289,6 +288,14 @@ only screen and (                min-resolution: 2dppx) {
 
   .header__link {
     display: none;
+  }
+
+  .site-intro__wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height:9rem;
   }
 
   .site-intro__title {

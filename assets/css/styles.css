@@ -99,6 +99,11 @@ button:focus {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 376px) {
+  html {
+    font-size: 12px;
+  }
+}
 .header-intro-wrapper {
   padding-top: 2.5rem;
   background-image: url("../img/main-bg.png");
@@ -358,6 +363,13 @@ button:focus {
   .header__link {
     display: none;
   }
+  .site-intro__wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 9rem;
+  }
   .site-intro__title {
     margin-bottom: 1.5rem;
   }
@@ -468,6 +480,11 @@ button:focus {
 @media screen and (max-width: 1100px) {
   html {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 376px) {
+  html {
+    font-size: 12px;
   }
 }
 .site-main {
@@ -1586,6 +1603,11 @@ button:focus {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 376px) {
+  html {
+    font-size: 12px;
+  }
+}
 .site-footer {
   background-color: #582d86;
   padding: 2rem;
@@ -1753,6 +1775,11 @@ button:focus {
 @media screen and (max-width: 1100px) {
   html {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 376px) {
+  html {
+    font-size: 12px;
   }
 }
 
