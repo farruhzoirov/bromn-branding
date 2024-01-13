@@ -320,7 +320,7 @@ button:focus {
     display: none;
   }
   .header__toggler {
-    display: block;
+    display: block !important;
     margin-right: 10rem;
   }
 }
@@ -332,7 +332,7 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center center;
     height: 40rem;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
   }
   .site-intro__wrapper {
     max-width: 26rem;
