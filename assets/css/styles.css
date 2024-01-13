@@ -285,6 +285,14 @@ button:focus {
   height: 100%;
 }
 
+.header__mobile {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
 @media screen and (max-width: 1220px) {
   .site-header {
     margin-bottom: 6rem;
@@ -308,7 +316,7 @@ button:focus {
   }
   .header__toggler {
     display: block;
-    margin-right: auto;
+    margin-right: 10rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -331,6 +339,34 @@ button:focus {
   .site-intro__title {
     font-size: 2.5rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .flex-container {
+    display: block;
+  }
+  .header__toggler {
+    display: block;
+    margin-right: auto;
+  }
+  .header__mobile {
+    display: flex;
+  }
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__link {
+    display: none;
+  }
+  .site-intro__title {
+    margin-bottom: 1.5rem;
+  }
+  .d-none {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @font-face {
