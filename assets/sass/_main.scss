@@ -944,7 +944,7 @@
 }
 .changeable-text__inner {
   width: 100%;
-  max-width: 82rem;
+  max-width: 90rem;
   position: relative;
 
   img:first-child {
@@ -959,6 +959,7 @@
   }
 
   strong {
+    text-align: center;
     color: #000;
     font-size: 4.85538rem;
     font-style: normal;
