@@ -380,6 +380,14 @@ button:focus {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 395px) {
+  .site-intro__wrapper {
+    max-width: 27rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");

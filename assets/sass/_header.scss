@@ -310,3 +310,11 @@ only screen and (                min-resolution: 2dppx) {
   }
 
 }
+@include media(395px) {
+  .site-intro__wrapper {
+    max-width: 27rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
