@@ -100,7 +100,7 @@ new Splide('#splide-container', {
             gap: '10px',
             arrows: true,
         },
-        '560': {
+        '620': {
             perPage: 1,
             arrows: true,
         }
