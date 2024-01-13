@@ -380,6 +380,14 @@ button:focus {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 446px) {
+  .site-intro__wrapper {
+    max-width: 27rem !important;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 395px) {
   .site-intro__wrapper {
     max-width: 27rem !important;
