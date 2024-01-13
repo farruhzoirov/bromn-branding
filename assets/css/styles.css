@@ -319,6 +319,7 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center center;
     height: 40rem;
+    background-attachment: fixed;
   }
   .site-intro__wrapper {
     max-width: 26rem;
