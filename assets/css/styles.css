@@ -99,7 +99,7 @@ button:focus {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 396px) {
   html {
     font-size: 12px;
   }
@@ -482,7 +482,7 @@ button:focus {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 396px) {
   html {
     font-size: 12px;
   }
@@ -1603,7 +1603,7 @@ button:focus {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 396px) {
   html {
     font-size: 12px;
   }
@@ -1777,7 +1777,7 @@ button:focus {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 396px) {
   html {
     font-size: 12px;
   }
