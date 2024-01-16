@@ -110,7 +110,7 @@ new Splide('#splide-container', {
 
 new Splide('#portfolio-container', {
     type: 'loop',
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     interval: 1500,
     pauseOnHover: true,
@@ -128,7 +128,7 @@ new Splide('#portfolio-container', {
             gap: '10px',
             arrows: true,
         },
-        '560': {
+        '590': {
             perPage: 1,
             arrows: true,
         }
