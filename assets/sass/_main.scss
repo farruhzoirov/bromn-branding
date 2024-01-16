@@ -1217,7 +1217,7 @@
     width: 50%;
     img {
       width: 35rem;
-      margin-left: 5rem;
+      margin-left: 7rem;
     }
   }
 
@@ -1227,6 +1227,27 @@
 }
 
 @include media(1110px) {
+  .projects__card:last-child {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .top-image-wrapper {
+    width: 50%;
+    img {
+      width: 27rem;
+      height: auto;
+    }
+  }
+
+  .bottom-image-wrapper {
+    width: 50%;
+    img {
+      width: 32rem;
+      height: auto;
+    }
+  }
+
 
 
 }
@@ -1373,6 +1394,101 @@
 }
 
 
+@include media(900px) {
+  .project-info__top {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .projects__wrapper {
+    width: 100% !important;
+
+    .projects__card {
+      width:100% !important;
+      max-width: 100% !important;
+    }
+
+    p {
+      width: 100% !important;
+    }
+  }
+  .top-image-wrapper {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+
+  .projects__wrapper__second {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-shrink: 0;
+
+    .projects__card {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  .project-info__bottom {
+    flex-direction: column;
+  }
+  .bottom-image-wrapper {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@include media(1200px){
+  .customers__mentioned::before {
+    display: none;
+  }
+
+  .brands__list {
+    flex-wrap: wrap;
+  }
+
+  .brands__item img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+}
 
 
+@include media(700px){
+  .customers__mentioned::before {
+    display: none;
+  }
 
+  .brands__list {
+    flex-wrap: wrap;
+  }
+
+  .brands__item img {
+    width: 100%;
+    max-width: 9rem;
+    height: auto;
+  }
+}
+
+
+@include media(600px){
+  .customers__mentioned::before {
+    display: none;
+  }
+
+  .brands__list {
+    flex-wrap: wrap;
+  }
+
+  .brands__item img {
+    width: 100%;
+    max-width: 8rem;
+    height: auto;
+  }
+}
