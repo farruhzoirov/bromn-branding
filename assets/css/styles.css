@@ -1195,7 +1195,7 @@ button:focus {
   justify-content: center;
   height: 100%;
   animation-name: ticker;
-  animation-duration: 40s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -1869,6 +1869,25 @@ button:focus {
     right: 2rem;
     transform: rotate(-180deg);
   }
+  .changeable-text__inner {
+    width: 100%;
+    max-width: 90rem;
+    position: relative;
+  }
+  .changeable-text__inner img:first-child {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: -3rem;
+  }
+  .changeable-text__inner img:nth-child(2) {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 2rem;
+    transform: rotate(-180deg);
+  }
 }
 @media screen and (max-width: 1000px) {
   .form__inner {
@@ -1893,6 +1912,9 @@ button:focus {
   }
 }
 @media screen and (max-width: 700px) {
+  .success-ticker__item {
+    font-size: 1.5rem;
+  }
   .switch__inner {
     display: flex;
     align-items: center;
@@ -2191,6 +2213,53 @@ button:focus {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+  }
+}
+@media screen and (max-width: 466px) {
+  .footer__logos img:first-child {
+    width: 10rem;
+    height: auto;
+    margin-right: 4rem;
+  }
+  .footer__logos img:last-child {
+    width: 14rem;
+    height: auto;
+  }
+  .footer__logos .footer__list:nth-child(2) {
+    margin-left: 6rem;
+    margin-right: 0;
+  }
+  .footer__logos .footer__list:nth-child(4) {
+    margin-left: 6rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer__list:nth-child(2) {
+    margin-left: 5rem;
+    margin-right: 0;
+  }
+  .footer__list:nth-child(4) {
+    margin-left: 5rem;
+  }
+  .footer__logos img:first-child {
+    width: 9rem;
+    height: auto;
+    margin-right: 2rem;
+  }
+  .footer__logos img:last-child {
+    width: 14rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer__logos img:first-child {
+    width: 10rem;
+    height: auto;
+    margin-right: 2rem;
+  }
+  .footer__logos img:last-child {
+    width: 15rem;
+    height: auto;
   }
 }
 @media screen and (max-width: 410px) {

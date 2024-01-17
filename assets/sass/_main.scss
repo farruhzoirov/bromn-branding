@@ -800,7 +800,7 @@
   justify-content: center;
   height: 100%;
   animation-name: ticker;
-  animation-duration: 40s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 
@@ -1594,6 +1594,27 @@
     right: 2rem;
     transform: rotate(-180deg);
   }
+
+  .changeable-text__inner {
+    width: 100%;
+    max-width: 90rem;
+    position: relative;
+
+    img:first-child {
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      top: -3rem;
+    }
+    img:nth-child(2) {
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      bottom: -2rem;
+      right: 2rem;
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 
@@ -1626,6 +1647,11 @@
 }
 
 @include  media(700px) {
+
+  .success-ticker__item {
+     font-size: 1.5rem;
+  }
+
   .switch__inner {
     display: flex;
     align-items: center;
