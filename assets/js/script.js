@@ -110,7 +110,7 @@ new Splide('#splide-container', {
 
 new Splide('#portfolio-container', {
     type: 'loop',
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     interval: 1500,
     pauseOnHover: true,

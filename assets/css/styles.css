@@ -519,7 +519,7 @@ button:focus {
 .site-main__slider {
   width: 100%;
   max-width: 60vw;
-  height: 70vh;
+  height: auto;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -1883,8 +1883,50 @@ button:focus {
     max-width: 100%;
   }
   .switch__wrapper {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form__submit__button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .switch__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 15rem;
+    background-color: rgba(19, 12, 28, 0.3);
+    border-radius: 3rem;
+    padding: 0.8rem;
+  }
+  .switch__inner .switch-label:nth-child(3) {
+    margin-left: -2rem !important;
+  }
+  .switch__inner span:first-child {
+    display: block;
+    color: var(--black-like-color);
+    font-size: 1.075rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 0.1rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .switch__wrapper {
+    transform: translateY(0);
+  }
+  .switch-label {
+    display: block;
+    width: 100% !important;
+    max-width: calc(50% - 2.4rem) !important;
+  }
+  .switch-label:nth-child(3) {
+    margin-left: -1.2rem;
   }
 }
 @font-face {
@@ -1995,7 +2037,8 @@ button:focus {
 }
 .site-footer {
   background-color: #582d86;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .site-footer h1 {
   color: #f4f4f4;
@@ -2061,6 +2104,49 @@ button:focus {
   margin-right: 1.5rem;
 }
 
+@media screen and (max-width: 900px) {
+  .site-footer h1 {
+    font-size: 3.5rem !important;
+  }
+  .footer__list:not(:last-child) {
+    margin-right: 8rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .site-footer h1 {
+    font-size: 3rem !important;
+  }
+  .our-help a {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer__list:not(:last-child) {
+    margin-right: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .site-footer h1 {
+    font-size: 2.5rem !important;
+  }
+  .our-help a {
+    font-size: 2.4rem;
+  }
+  .our-help img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .site-footer h1 {
+    font-size: 2.4rem !important;
+  }
+}
+@media screen and (max-width: 396px) {
+  .site-footer h1 {
+    font-size: 2.6rem !important;
+  }
+}
 @font-face {
   font-family: "Degular";
   src: url("../fonts/Degular-Light.woff2") format("woff2"), url("../fonts/Degular-Light.woff") format("woff");

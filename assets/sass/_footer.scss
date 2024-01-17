@@ -4,7 +4,8 @@
 
 .site-footer {
   background-color: #582d86;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   h1 {
     color: #f4f4f4;
@@ -74,4 +75,57 @@
   width: 100% !important;
   max-width: 25rem !important;
   margin-right: 1.5rem;
+}
+
+@include media(900px) {
+  .site-footer h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .footer__list:not(:last-child) {
+    margin-right: 8rem;
+  }
+}
+
+@include media(770px) {
+  .site-footer h1 {
+    font-size: 3rem !important;
+  }
+
+  .our-help a {
+    font-size: 2.75rem;
+  }
+}
+
+
+@include media(750px) {
+  .footer__list:not(:last-child) {
+    margin-right: 6rem;
+  }
+}
+
+@include media(500px) {
+  .site-footer h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .our-help a {
+    font-size: 2.4rem;
+  }
+  .our-help img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
+
+@include media(410px) {
+  .site-footer h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
+@include media(396px) {
+  .site-footer h1 {
+    font-size: 2.6rem !important;
+  }
 }
