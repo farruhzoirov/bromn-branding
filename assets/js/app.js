@@ -3,6 +3,36 @@
 const togglerBtn = document.querySelector('.header__toggler');
 const headerSidebar = document.querySelector('.header__sidebar');
 const sidebarCloser = headerSidebar.querySelector('.sidebar__closer');
+const serviceItems = document.querySelectorAll('.service__item');
+const serviceLinks = document.querySelectorAll('.service__link');
+const servicesType = document.querySelectorAll('.services__type');
+
+
+
+function deActivateServiceItems() {
+    serviceItems.forEach(function (item) {
+        item.classList.remove('service__item--active');
+    });
+}
+
+function deActivateServiceTabs() {
+    servicesType.forEach(function (tabItem) {
+        tabItem.classList.remove('services__type--active');
+    });
+}
+
+serviceLinks.forEach((serviceLink, index) => {
+    serviceLink.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        deActivateServiceItems();
+        deActivateServiceTabs();
+
+        serviceLink.parentElement.classList.add('service__item--active');
+        servicesType[index].classList.add('services__type--active');
+    });
+});
+
 if(togglerBtn) {
     togglerBtn.addEventListener('click', () => {
         headerSidebar.style.left = '0';
@@ -35,3 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     observer.observe(secondStrong);
 });
+
+
+
+
+
+

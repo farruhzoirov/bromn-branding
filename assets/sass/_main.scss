@@ -1,5 +1,21 @@
 @import "general";
 @import "media";
+
+
+.services__type {
+  display: none;
+}
+
+.services__type--active {
+  display: block;
+}
+
+.service__item--active {
+  color: var(--black-like-color);
+}
+
+
+
 .site-main {
   flex-grow: 1;
 }
@@ -1616,6 +1632,9 @@
     }
   }
 }
+
+
+
 
 
 
