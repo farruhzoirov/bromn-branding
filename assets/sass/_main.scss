@@ -1714,3 +1714,17 @@
 }
 
 
+@include media(800px) {
+  .splide__arrows {
+    display: block;
+    position: absolute;
+    bottom: -15rem;
+    left: 63%;
+  }
+
+  .splide__arrow--next {
+    right: -1rem !important;
+  }
+}
+
+
