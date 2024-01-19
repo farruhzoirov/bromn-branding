@@ -2019,6 +2019,12 @@ button:focus {
     bottom: -15rem;
     left: 63%;
   }
+  .portfolio__slider .splide__arrows {
+    display: block;
+    position: absolute;
+    bottom: -17rem !important;
+    left: 63%;
+  }
   .splide__arrow--next {
     right: -1rem !important;
   }
