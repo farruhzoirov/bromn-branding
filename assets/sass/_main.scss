@@ -1715,6 +1715,9 @@
 
 
 @include media(800px) {
+  .portfolio__more {
+    margin-top: 5rem;
+  }
   .splide__arrows {
     display: block;
     position: absolute;

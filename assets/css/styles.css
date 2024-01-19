@@ -2013,6 +2013,9 @@ button:focus {
   }
 }
 @media screen and (max-width: 800px) {
+  .portfolio__more {
+    margin-top: 5rem;
+  }
   .splide__arrows {
     display: block;
     position: absolute;
