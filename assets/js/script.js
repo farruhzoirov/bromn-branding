@@ -60,7 +60,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 const successTickerTrack = document.querySelector('.success-ticker__track');
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 10; i++) {
     successTickerTrack.innerHTML += `
              <span class="success-ticker__item">Brending OVARD sovrindori</span>
              <img src="${trickerArrow[0]}" alt="">

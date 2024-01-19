@@ -126,3 +126,16 @@ button:focus {
     font-size: 12px;
   }
 }
+
+
+@include larger-media(1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@include larger-media(1920px) {
+  html {
+    font-size: 20px;
+  }
+}
