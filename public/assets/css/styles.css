@@ -654,16 +654,16 @@ button:focus {
 .ticker {
   position: relative;
   z-index: 1;
-  width: 50vw;
+  width: 40vw;
   height: 2rem;
   padding: 1.5rem;
 }
 
 .ticker__line {
   position: absolute;
-  left: -0.1vw;
   top: 15vh;
-  width: 39vw;
+  left: -0.1rem;
+  width: 39.2vw;
   height: 100%;
   transform: translateY(-1px);
   background-color: var(--ticker-color);
@@ -687,7 +687,6 @@ button:focus {
 
 .ticker__item {
   flex-shrink: 0;
-  margin: 0 1rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
@@ -794,19 +793,20 @@ button:focus {
 }
 
 .tabs-info {
+  display: none;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   width: 100%;
   max-width: 36rem;
 }
 
+.tabs-info--active {
+  display: block;
+}
+
 .tabs__list {
   display: flex;
   margin-bottom: 0.5rem;
-}
-
-.tabs__item:first-child .tabs__link {
-  color: var(--tabs-active-color);
 }
 
 .tabs__item:not(:last-child) {
@@ -820,6 +820,10 @@ button:focus {
   font-weight: 500;
   line-height: normal;
   white-space: nowrap;
+}
+
+.tabs__link--active {
+  color: var(--tabs-active-color) !important;
 }
 
 #splide-container {
@@ -1869,12 +1873,6 @@ button:focus {
   }
 }
 @media screen and (max-width: 1200px) {
-  .customers__mentioned::before {
-    display: none;
-  }
-  .portolio__mentioned:before {
-    display: none;
-  }
   .brands__list {
     flex-wrap: wrap;
   }
@@ -1885,9 +1883,6 @@ button:focus {
   }
 }
 @media screen and (max-width: 700px) {
-  .customers__mentioned::before {
-    display: none;
-  }
   .brands__list {
     flex-wrap: wrap;
   }
@@ -1905,9 +1900,6 @@ button:focus {
   }
 }
 @media screen and (max-width: 600px) {
-  .customers__mentioned::before {
-    display: none;
-  }
   .brands__list {
     flex-wrap: wrap;
   }
@@ -2183,7 +2175,7 @@ button:focus {
     margin-left: 4rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .customers__inner {
     padding: 6.3rem 0;
   }
@@ -2214,6 +2206,119 @@ button:focus {
     line-height: 110%;
     position: absolute;
     margin-left: 4rem;
+  }
+  .services__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+  }
+  .services__mentioned::before {
+    width: 4rem;
+    height: 0.125rem;
+    content: "";
+    margin-left: -2vw;
+    margin-right: 1rem;
+  }
+  .services__mentioned strong {
+    margin-left: 4rem;
+  }
+  .portolio__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+  }
+  .portolio__mentioned::before {
+    width: 4rem;
+    height: 0.125rem;
+    content: "";
+    margin-left: -2vw;
+    margin-right: 1rem;
+  }
+  .portolio__mentioned strong {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .customers__inner {
+    padding: 6.3rem 0;
+  }
+  .customers__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+  }
+  .customers__mentioned::before {
+    width: 4rem;
+    height: 0.125rem;
+    content: "";
+    margin-left: -2vw;
+    margin-right: 1rem;
+    background-color: #fff;
+  }
+  .customers__mentioned strong {
+    display: block;
+    color: #f4f4f4;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    position: absolute;
+    margin-left: 5rem;
+  }
+  .services__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+  }
+  .services__mentioned::before {
+    width: 4rem;
+    height: 0.125rem;
+    content: "";
+    margin-left: -2vw;
+    margin-right: 1rem;
+  }
+  .services__mentioned strong {
+    margin-left: 5rem;
+  }
+  .portolio__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+  }
+  .portolio__mentioned::before {
+    width: 4rem;
+    height: 0.125rem;
+    content: "";
+    margin-left: -2vw;
+    margin-right: 1rem;
+  }
+  .portolio__mentioned strong {
+    margin-left: 5rem;
   }
 }
 @media screen and (max-width: 1200px) {
