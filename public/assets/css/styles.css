@@ -2262,7 +2262,6 @@ button:focus {
   }
   .services__type__smaller .service__context {
     font-size: 1.25rem !important;
-    text-align: justify;
   }
 }
 @font-face {

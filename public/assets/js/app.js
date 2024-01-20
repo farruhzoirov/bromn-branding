@@ -33,6 +33,10 @@ serviceLinks.forEach((serviceLink, index) => {
         servicesType[index].classList.add('services__type--active');
     });
 });
+
+
+
+
 if (document.documentElement.offsetWidth <= 1200) {
    servicesTypeSmallerFirst.classList.add('services__type__smaller--active');
 
