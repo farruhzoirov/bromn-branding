@@ -5,21 +5,20 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 // Content for the slider
 const sliderContent = [
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
+    '../public/assets/img/slider-img@2x.png',
 ];
 
 
 const trickerArrow = [
-    '../assets/img/opener-arrow.svg'
+    '../public/assets/img/opener-arrow.svg'
 ]
 
 
