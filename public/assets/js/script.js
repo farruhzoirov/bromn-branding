@@ -5,20 +5,20 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 // Content for the slider
 const sliderContent = [
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
-    '../public/assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
+    '../assets/img/slider-img@2x.png',
 ];
 
 
 const trickerArrow = [
-    '../public/assets/img/opener-arrow.svg'
+    '../assets/img/opener-arrow.svg'
 ]
 
 
@@ -57,6 +57,11 @@ for (let i = 0; i < 50; i++) {
              <img src="${trickerArrow[0]}" alt="">
        `
 }
+
+
+
+
+
 
 const successTickerTrack = document.querySelector('.success-ticker__track');
 for (let i = 0; i < 10; i++) {

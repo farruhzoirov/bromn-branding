@@ -654,7 +654,7 @@ button:focus {
 .ticker {
   position: relative;
   z-index: 1;
-  width: 40vw;
+  width: 50vw;
   height: 2rem;
   padding: 1.5rem;
 }
@@ -662,8 +662,8 @@ button:focus {
 .ticker__line {
   position: absolute;
   top: 15vh;
-  left: -0.1rem;
-  width: 39.2vw;
+  width: 40.76vw;
+  margin-left: -3.3rem;
   height: 100%;
   transform: translateY(-1px);
   background-color: var(--ticker-color);
@@ -1758,6 +1758,7 @@ button:focus {
     left: 0;
     width: 100%;
     top: 0;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 1000px) {
