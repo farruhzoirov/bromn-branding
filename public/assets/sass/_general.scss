@@ -34,11 +34,11 @@
 //Custom props
 
 :root {
-   --some-text: #9954ff;
+   --some-text: rgba(153, 84, 255, 2);
    --darker-color: #4918a6;
    --ticker-color: #582D86;
    --tabs-active-color: #9954ff;
-   --tabs-color:rgba(19, 12, 28, 0.3);
+   --tabs-color:rgba(19, 12, 28, 0.6);
    --black-like-color:#130c1c;
    --lighter-text-color:rgba(19, 12, 28, 0.4);
 
@@ -123,19 +123,19 @@ button:focus {
 
 @include media(396px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 
 @include larger-media(1700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
 @include larger-media(1920px) {
   html {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }

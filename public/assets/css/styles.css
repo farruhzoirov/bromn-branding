@@ -23,11 +23,11 @@
   font-style: normal;
 }
 :root {
-  --some-text: #9954ff;
+  --some-text: rgba(153, 84, 255, 2);
   --darker-color: #4918a6;
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
-  --tabs-color:rgba(19, 12, 28, 0.3);
+  --tabs-color:rgba(19, 12, 28, 0.6);
   --black-like-color:#130c1c;
   --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
@@ -101,17 +101,17 @@ button:focus {
 }
 @media screen and (max-width: 396px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media screen and (min-width: 1700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 .header-intro-wrapper {
@@ -235,7 +235,7 @@ button:focus {
 .site-intro__wrapper {
   max-width: 60%;
   width: 100%;
-  height: calc(100vh - 88px);
+  height: calc(100vh - 140px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +394,7 @@ button:focus {
     text-align: center;
   }
 }
-@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 800px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 800px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 800px) and (min-device-pixel-ratio: 2), only screen and (max-width: 800px) and (min-resolution: 192dpi), only screen and (max-width: 800px) and (min-resolution: 2dppx) {
+@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 800px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 800px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-width: 800px) and (max-width: 800px), only screen and (max-width: 800px) and (min-device-pixel-ratio: 2), only screen and (max-width: 800px) and (min-resolution: 192dpi), only screen and (max-width: 800px) and (min-resolution: 2dppx) {
   .header-intro-wrapper {
     padding-top: 2rem;
     background-image: url("../img/intro-mobile-bg@2x.png");
@@ -480,11 +480,11 @@ button:focus {
   font-style: normal;
 }
 :root {
-  --some-text: #9954ff;
+  --some-text: rgba(153, 84, 255, 2);
   --darker-color: #4918a6;
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
-  --tabs-color:rgba(19, 12, 28, 0.3);
+  --tabs-color:rgba(19, 12, 28, 0.6);
   --black-like-color:#130c1c;
   --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
@@ -558,17 +558,17 @@ button:focus {
 }
 @media screen and (max-width: 396px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media screen and (min-width: 1700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 .services__type__smaller {
@@ -1055,7 +1055,6 @@ button:focus {
 
 .bottom-image-wrapper {
   transform: translateX(-7.4rem);
-  width: 40%;
   align-self: flex-end;
 }
 .bottom-image-wrapper img {
@@ -1580,7 +1579,7 @@ button:focus {
 }
 
 .switch-input:checked + .switch__inner .switch-slider:before {
-  background-color: var(--some-text);
+  background-color: var(--darker-color);
   transform: translateX(2rem);
 }
 
@@ -1719,7 +1718,7 @@ button:focus {
   }
   .site-main__slider::-webkit-scrollbar {
     width: 0.4rem;
-    height: 0.4rem;
+    height: 0.2rem;
   }
   .site-main__slider::-webkit-scrollbar-track {
     background-color: var(--some-text);
@@ -1959,7 +1958,7 @@ button:focus {
   .changeable-text__inner strong {
     text-align: center;
     color: #000;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -2394,11 +2393,11 @@ button:focus {
   font-style: normal;
 }
 :root {
-  --some-text: #9954ff;
+  --some-text: rgba(153, 84, 255, 2);
   --darker-color: #4918a6;
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
-  --tabs-color:rgba(19, 12, 28, 0.3);
+  --tabs-color:rgba(19, 12, 28, 0.6);
   --black-like-color:#130c1c;
   --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
@@ -2472,17 +2471,17 @@ button:focus {
 }
 @media screen and (max-width: 396px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media screen and (min-width: 1700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 .site-footer {
@@ -2725,11 +2724,11 @@ button:focus {
   font-style: normal;
 }
 :root {
-  --some-text: #9954ff;
+  --some-text: rgba(153, 84, 255, 2);
   --darker-color: #4918a6;
   --ticker-color: #582D86;
   --tabs-active-color: #9954ff;
-  --tabs-color:rgba(19, 12, 28, 0.3);
+  --tabs-color:rgba(19, 12, 28, 0.6);
   --black-like-color:#130c1c;
   --lighter-text-color:rgba(19, 12, 28, 0.4);
 }
@@ -2803,17 +2802,17 @@ button:focus {
 }
 @media screen and (max-width: 396px) {
   html {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media screen and (min-width: 1700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
