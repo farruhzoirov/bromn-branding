@@ -59,10 +59,6 @@ html {
   padding: 0;
 }
 
-*:active {
-  outline: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -132,14 +128,14 @@ button:focus {
 }
 
 
-//@include larger-media(1700px) {
-//  html {
-//    font-size: 18px;
-//  }
-//}
+@include larger-media(1700px) {
+  html {
+    font-size: 18px;
+  }
+}
 
-//@include larger-media(1920px) {
-//  html {
-//    font-size: 20px;
-//  }
-//}
+@include larger-media(1920px) {
+  html {
+    font-size: 20px;
+  }
+}

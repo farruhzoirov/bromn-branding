@@ -45,10 +45,6 @@ html {
   padding: 0;
 }
 
-*:active {
-  outline: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -106,6 +102,16 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
   }
 }
 .header-intro-wrapper {
@@ -496,10 +502,6 @@ html {
   padding: 0;
 }
 
-*:active {
-  outline: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -559,6 +561,16 @@ button:focus {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
+  }
+}
 .services__type__smaller {
   display: none !important;
 }
@@ -605,8 +617,8 @@ button:focus {
 }
 
 .site-main__slider::-webkit-scrollbar {
-  width: 0.2rem;
-  height: 0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
 }
 
 .site-main__slider::-webkit-scrollbar-track {
@@ -642,7 +654,7 @@ button:focus {
 .ticker {
   position: relative;
   z-index: 1;
-  width: 50vw;
+  width: 40vw;
   height: 2rem;
   padding: 1.5rem;
 }
@@ -650,8 +662,8 @@ button:focus {
 .ticker__line {
   position: absolute;
   top: 15vh;
-  width: 40.76vw;
-  margin-left: -3.3rem;
+  left: -0.1rem;
+  width: 39.2vw;
   height: 100%;
   transform: translateY(-1px);
   background-color: var(--ticker-color);
@@ -1746,7 +1758,6 @@ button:focus {
     left: 0;
     width: 100%;
     top: 0;
-    margin-left: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2405,10 +2416,6 @@ html {
   padding: 0;
 }
 
-*:active {
-  outline: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -2466,6 +2473,16 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
   }
 }
 .site-footer {
@@ -2730,10 +2747,6 @@ html {
   padding: 0;
 }
 
-*:active {
-  outline: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -2791,6 +2804,16 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 20px;
   }
 }
 
