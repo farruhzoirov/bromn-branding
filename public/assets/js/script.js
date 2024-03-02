@@ -5,27 +5,24 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 // Content for the slider
 const sliderContent = [
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
-    '../assets/img/slider-img@2x.png',
+    '../public/assets/slider-imgs/transport-slider@2x.png',
+    '../public/assets/slider-imgs/shukur-proff-slider@2x.png',
+    '../public/assets/slider-imgs/programmer-degree-slider@2x.png',
+    '../public/assets/slider-imgs/medal-slider@2x.png',
+    '../public/assets/slider-imgs/sun-book-slider@2x.png',
+    '../public/assets/slider-imgs/dizayntech-slider@2x.png'
 ];
 
 
 const trickerArrow = [
-    '../assets/img/opener-arrow.svg'
+    '../public/assets/img/opener-arrow.svg'
 ]
 
 
 sliderContent.forEach(content => {
     const sliderItem = document.createElement('div');
     sliderItem.classList.add('slider-item');
-    sliderItem.innerHTML = `<img loading="lazy" src="${content}" width="100%" height="100%">`;
+    sliderItem.innerHTML = `<img loading="lazy" style="display: flex; flex-direction: column; margin-top: -1px" src="${content}" width="100%" height="100%">`;
     const imageItem = sliderItem.querySelector('img');
     imageItem.className = 'slider-image';
     sliderContainer.appendChild(sliderItem);
@@ -57,11 +54,6 @@ for (let i = 0; i < 50; i++) {
              <img src="${trickerArrow[0]}" alt="">
        `
 }
-
-
-
-
-
 
 const successTickerTrack = document.querySelector('.success-ticker__track');
 for (let i = 0; i < 10; i++) {

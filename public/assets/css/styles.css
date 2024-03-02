@@ -45,6 +45,10 @@ html {
   padding: 0;
 }
 
+*:active {
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -102,16 +106,6 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 20px;
   }
 }
 .header-intro-wrapper {
@@ -502,6 +496,10 @@ html {
   padding: 0;
 }
 
+*:active {
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -561,16 +559,6 @@ button:focus {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 1700px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 20px;
-  }
-}
 .services__type__smaller {
   display: none !important;
 }
@@ -617,8 +605,8 @@ button:focus {
 }
 
 .site-main__slider::-webkit-scrollbar {
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.2rem;
+  height: 0.2rem;
 }
 
 .site-main__slider::-webkit-scrollbar-track {
@@ -2417,6 +2405,10 @@ html {
   padding: 0;
 }
 
+*:active {
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -2474,16 +2466,6 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 20px;
   }
 }
 .site-footer {
@@ -2748,6 +2730,10 @@ html {
   padding: 0;
 }
 
+*:active {
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -2805,16 +2791,6 @@ button:focus {
 @media screen and (max-width: 396px) {
   html {
     font-size: 12px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 20px;
   }
 }
 
