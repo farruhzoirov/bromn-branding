@@ -3,58 +3,88 @@
 // Site main img slider
 const sliderContainer = document.querySelector('.site-main__slider');
 
-// Content for the slider
-const sliderContent = [
-  '../public/assets/slider-imgs/transport-slider@2x.png',
-  '../public/assets/slider-imgs/shukur-proff-slider@2x.png',
-  '../public/assets/slider-imgs/programmer-degree-slider@2x.png',
-  '../public/assets/slider-imgs/medal-slider@2x.png',
-  '../public/assets/slider-imgs/sun-book-slider@2x.png',
-  '../public/assets/slider-imgs/dizayntech-slider@2x.png'
-];
-
 
 const trickerArrow = [
   '../public/assets/img/opener-arrow.svg'
 ]
 
-try {
-  sliderContent.forEach(content => {
-    const sliderItem = document.createElement('div');
-    sliderItem.classList.add('slider-item');
-    sliderItem.innerHTML = `<img loading="lazy" style="display: flex; flex-direction: column; margin-top: -1px" src="${content}" width="100%" height="100%">`;
-    const imageItem = sliderItem.querySelector('img');
-    imageItem.className = 'slider-image';
-    sliderContainer.appendChild(sliderItem);
-  });
 
-  let currentIndex = 0;
-  const sliderCounter = document.querySelector('.slider__counter');
-  const sliderTexts = document.querySelectorAll('.slider__text');
+const sliderDescriptions = [
+  {
+    title:'Transport Universiteti',
+    desc: 'Web design / UX/UI analitika'
+  },
+  {
+    title:'Shukur Proff',
+    desc: 'Logo branding / Instagram Content / Akaunt packaging.'
+  },
+  {
+    title:'MDC Uzbekistan',
+    desc: 'Logo branding/ Branding/ Identika'
+  },
+  {
+    title:'Akademik mukofoti',
+    desc: 'Logo/ Mukofot'
+  },
+  {
+    title:'Royal vs Proline',
+    desc: 'Dizayn/ Katalog dizayn'
+  },
+  {
+    title:'DizaynTech',
+    desc: 'Logo branding/ Identika/Instagram Content/ Instagram packaging'
+  }
+]
 
-  sliderCounter.innerHTML = 1;
-  sliderTexts[0].style.display = 'block'
+const slider_img = document.querySelectorAll('.slider-img');
+const sliderBottom = document.querySelectorAll('.slider-bottom');
+const sliderDesc = document.querySelector('.slider-desc');
+const slideCounter = document.getElementById('slide-counter');
+let activeIndex = 0;
 
-  function changeDisplay() {
-    sliderTexts[currentIndex - 1].style.display = 'none';
+function changeSlide() {
+  sliderBottom.forEach(item => {
+    item.style.height = '0.15rem'
+  })
+  slideCounter.innerHTML = '';
+  sliderDesc.innerHTML = '';
+  let index;
+
+  for (index = 0; index < slider_img.length; index++) {
+    slider_img[index].style.display = 'none';
   }
 
-  function changeSlide() {
-    currentIndex = (currentIndex + 1) % sliderContent.length;
-    console.log(currentIndex)
-    changeDisplay();
-    sliderTexts[currentIndex].style.display = 'block';
-    sliderCounter.innerHTML = currentIndex + 1;
-    const scrollPosition = currentIndex * sliderContainer.clientWidth;
-    sliderContainer.scrollLeft = scrollPosition;
-
+  activeIndex++;
+  if (activeIndex > slider_img.length) {
+    activeIndex = 1;
   }
-
-
-  setInterval(changeSlide, 2000);
-} catch (e) {
-
+  sliderBottom[activeIndex - 1].style.height = '0.45rem';
+  sliderDesc.innerHTML += `
+      <h1>${sliderDescriptions[activeIndex - 1].title}</h1>
+      <p>${sliderDescriptions[activeIndex - 1].desc}</p>
+  `
+  slideCounter.innerHTML += `
+        <p><span>0${activeIndex}</span> / 0${slider_img.length}</p>
+    `
+  slider_img[activeIndex - 1].style.display = 'block'
 }
+
+function next() {
+  changeSlide();
+}
+
+function prev() {
+  activeIndex -= 2;
+  if (activeIndex < 0) {
+    activeIndex = slider_img.length - 1;
+  }
+  changeSlide();
+}
+
+
+changeSlide();
+setInterval(changeSlide, 3000);
+
 
 
 // Ticker codes
@@ -121,7 +151,7 @@ new Splide('#splide-container', {
 
 new Splide('#portfolio-container', {
   type: 'loop',
-  autoplay: false,
+  autoplay: true,
   arrows: true,
   interval: 1500,
   pauseOnHover: true,

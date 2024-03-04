@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   min-height: 100vh;
+  z-index: 10;
 }
 
 //Backround image for retina
@@ -132,7 +133,7 @@ only screen and (                min-resolution: 2dppx) {
 .site-intro__wrapper {
   max-width: 60%;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 16rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,7 +270,7 @@ only screen and (                min-resolution: 2dppx) {
   .site-intro__wrapper {
     max-width: 80%;
     width: 100%;
-    height: calc(100vh - 88px);
+    height: calc(100vh - 122px);
     justify-content: flex-start;
   }
   .site-intro__title {
