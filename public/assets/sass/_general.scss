@@ -123,11 +123,11 @@ button:focus {
   }
 }
 
-@include media(396px) {
-  html {
-    font-size: 12px;
-  }
-}
+//@include media(396px) {
+//  html {
+//    font-size: 12px;
+//  }
+//}
 
 
 @include larger-media(1700px) {
