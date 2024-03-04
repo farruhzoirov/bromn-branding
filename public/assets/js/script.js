@@ -59,13 +59,16 @@ function changeSlide() {
     activeIndex = 1;
   }
   sliderBottom[activeIndex - 1].style.height = '0.45rem';
+
   sliderDesc.innerHTML += `
       <h1>${sliderDescriptions[activeIndex - 1].title}</h1>
       <p>${sliderDescriptions[activeIndex - 1].desc}</p>
   `
+
   slideCounter.innerHTML += `
         <p><span>0${activeIndex}</span> / 0${slider_img.length}</p>
     `
+
   slider_img[activeIndex - 1].style.display = 'block'
 }
 
@@ -83,7 +86,7 @@ function prev() {
 
 
 changeSlide();
-setInterval(changeSlide, 3000);
+// setInterval(changeSlide, 3000);
 
 
 
