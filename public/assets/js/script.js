@@ -5,7 +5,7 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 
 const trickerArrow = [
-  '../assets/img/opener-arrow.svg'
+  '../public/assets/img/opener-arrow.svg'
 ]
 
 
@@ -83,7 +83,7 @@ function prev() {
 
 
 changeSlide();
-setInterval(changeSlide, 4000);
+setInterval(changeSlide, 3000);
 
 
 
@@ -151,7 +151,7 @@ new Splide('#splide-container', {
 
 new Splide('#portfolio-container', {
   type: 'loop',
-  autoplay: false,
+  autoplay: true,
   arrows: true,
   interval: 1500,
   pauseOnHover: true,
@@ -189,29 +189,7 @@ for (const projectItem of projectItems) {
   projectItem.classList.add("splide__item-2");
 }
 
-// Get the input element
-var telInput = document.getElementById('tel-input');
 
-// Add keydown event listener
-telInput.addEventListener('keydown', function(event) {
-  // Get the input value
-  var inputValue = event.target.value;
-
-  // Get the cursor position
-  var cursorPosition = event.target.selectionStart;
-
-  // Check if input doesn't start with '+998'
-  if (cursorPosition < 4 && !inputValue.startsWith('+998')) {
-    // Prevent the default action (typing) for the event
-    event.preventDefault();
-
-    // Set the input value to '+998'
-    event.target.value = '+998';
-
-    // Set the cursor position after '+998'
-    event.target.setSelectionRange(4, 4);
-  }
-});
 
 
 
