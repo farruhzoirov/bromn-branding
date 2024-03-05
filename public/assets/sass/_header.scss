@@ -1,5 +1,6 @@
 @import "general";
 @import "media";
+
 .header-intro-wrapper {
   padding-top: 2.5rem;
   background-image: url("../img/main-bg.png");
@@ -11,13 +12,12 @@
 }
 
 //Backround image for retina
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
   .header-intro-wrapper {
     background-image: url("../img/main-bg@2x.png");
     background-size: cover;
@@ -60,6 +60,7 @@ only screen and (                min-resolution: 2dppx) {
 .header__logo:hover {
   opacity: 0.8;
 }
+
 .header__logo:active {
   opacity: 0.6;
 }
@@ -161,6 +162,7 @@ only screen and (                min-resolution: 2dppx) {
 .header__toggler {
   display: none;
 }
+
 //Header sidebar styles
 .header__sidebar {
   padding: 1rem;
@@ -209,7 +211,6 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
-
 .sidebar__messangers {
   ul {
     display: flex;
@@ -226,7 +227,7 @@ only screen and (                min-resolution: 2dppx) {
 .sidebar__header {
   width: 100%;
   max-width: 60%;
-  margin-top: 3rem  ;
+  margin-top: 3rem;
   position: absolute;
   top: 1.4rem;
   left: 2rem;
@@ -251,7 +252,6 @@ only screen and (                min-resolution: 2dppx) {
   display: flex;
 
 }
-
 
 
 .d-none {
@@ -286,7 +286,7 @@ only screen and (                min-resolution: 2dppx) {
 
   .header__toggler {
     display: block !important;
-    margin-right: 7.5rem;
+    margin-right: 5.3rem;
   }
 }
 
@@ -301,13 +301,13 @@ only screen and (                min-resolution: 2dppx) {
     background-attachment: fixed !important;
   }
 
-   .site-intro__wrapper {
-     max-width: 26rem;
-     width: 100%;
-     margin-right: auto;
-     margin-left: auto;
-     height:9rem;
-   }
+  .site-intro__wrapper {
+    max-width: 26rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 9rem;
+  }
 
   .site-intro__title {
     font-size: 2.5rem;
@@ -315,17 +315,10 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
+
+
+
 @include media(800px) {
-  //@media
-  //only screen and (-webkit-min-device-pixel-ratio: 2),
-  //only screen and (   min--moz-device-pixel-ratio: 2),
-  //only screen and (     -o-min-device-pixel-ratio: 2/1),
-  //only screen and(   max-width: 800px),
-  //only screen and (        min-device-pixel-ratio: 2),
-  //only screen and (                min-resolution: 192dpi),
-  //only screen and (                min-resolution: 2dppx) {
-  //
-  //}
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -343,30 +336,28 @@ only screen and (                min-resolution: 2dppx) {
       background-attachment: fixed !important;
     }
   }
-
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 3),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (max-width: 800px),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-  .header-intro-wrapper {
-    padding-top: 2rem;
-    background-image: url("../img/intro-mobile-bg@3x.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 40rem;
-    background-attachment: fixed !important;
+@include media(800px) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 3),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (max-width: 800px),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    .header-intro-wrapper {
+      padding-top: 2rem;
+      background-image: url("../img/intro-mobile-bg@3x.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 40rem;
+      background-attachment: fixed !important;
+    }
   }
 }
-
-
-
 
 
 @include media(650px) {
