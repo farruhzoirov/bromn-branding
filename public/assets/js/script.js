@@ -5,7 +5,7 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 
 const trickerArrow = [
-  '../public/assets/img/opener-arrow.svg'
+  '../assets/img/opener-arrow.svg'
 ]
 
 
@@ -188,6 +188,77 @@ const projectItems = portfolioSlider.querySelectorAll('.splide__slide');
 for (const projectItem of projectItems) {
   projectItem.classList.add("splide__item-2");
 }
+
+const smallScreenTabsWrapper = document.getElementById('smaller-tab-1');
+const smallScreenTabsWrapper_2 = document.getElementById('smaller-tab-2');
+
+const smallScreenTabs = smallScreenTabsWrapper.querySelectorAll('.type__tab');
+const smallScreenTexts = smallScreenTabsWrapper.querySelectorAll('.service__context');
+const smallScreenTabs_2 = smallScreenTabsWrapper_2.querySelectorAll('.type__tab');
+const smallScreenTexts_2 = smallScreenTabsWrapper_2.querySelectorAll('.service__context');
+
+const largeScreenTabsWrapper = document.getElementById('larger-tab-1');
+const largeScreenTabsWrapper_2 = document.getElementById('larger-tab-2');
+
+const largeScreenTabs = largeScreenTabsWrapper.querySelectorAll('.type__tab');
+const largeScreenTexts = largeScreenTabsWrapper.querySelectorAll('.service__context');
+const largeScreenTabs_2 = largeScreenTabsWrapper_2.querySelectorAll('.type__tab');
+const largeScreenTexts_2 = largeScreenTabsWrapper_2.querySelectorAll('.service__context');
+
+
+const deActiveTexts = (element) => {
+  element.forEach((item, index) => {
+    item.classList.add('tabs-display');
+  })
+}
+
+const deActiveTabs = (element) => {
+  element.forEach((item, index) => {
+        item.classList.remove('type__tab--active');
+    })
+}
+
+smallScreenTabs.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    deActiveTabs(smallScreenTabs);
+    deActiveTexts(smallScreenTexts);
+    item.classList.add('type__tab--active');
+    smallScreenTexts[index].classList.remove('tabs-display');
+  })
+})
+
+smallScreenTabs_2.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    deActiveTabs(smallScreenTabs_2);
+    deActiveTexts(smallScreenTexts_2);
+    item.classList.add('type__tab--active');
+    smallScreenTexts_2[index].classList.remove('tabs-display');
+  })
+})
+largeScreenTabs.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    deActiveTabs(largeScreenTabs);
+    deActiveTexts(largeScreenTexts);
+    item.classList.add('type__tab--active');
+    largeScreenTexts[index].classList.remove('tabs-display');
+  })
+})
+
+largeScreenTabs_2.forEach((item, index) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    deActiveTabs(largeScreenTabs_2);
+    deActiveTexts(largeScreenTexts_2);
+    item.classList.add('type__tab--active');
+    largeScreenTexts_2[index].classList.remove('tabs-display');
+  })
+})
+
 
 
 

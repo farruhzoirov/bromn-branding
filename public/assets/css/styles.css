@@ -703,6 +703,10 @@ button:focus {
     margin-top: -0.3rem !important;
   }
 }
+.tabs-display {
+  display: none;
+}
+
 .img-box {
   margin-bottom: 2rem;
 }
@@ -1293,11 +1297,35 @@ button:focus {
 .brands__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brands__list:not(:last-child) {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
+}
+
+.brands__item {
+  width: 100%;
+  max-width: 24rem;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.brands__item img {
+  width: 80%;
+  height: auto;
+  flex-shrink: 1;
+}
+
+.brands__item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.mb-img {
+  margin-bottom: 2rem;
 }
 
 .services {
@@ -2163,7 +2191,7 @@ button:focus {
   }
   .brands__item img {
     width: 100%;
-    max-width: 8rem;
+    max-width: 14rem;
     height: auto;
   }
 }
@@ -2485,6 +2513,20 @@ button:focus {
   .services__mentioned strong {
     margin-left: 4rem;
   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (max-width: 600px) and (min--moz-device-pixel-ratio: 3), only screen and (min-width: 1200px) and (max-width: 600px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (max-width: 600px) and (-o-min-device-pixel-ratio: 2/1), only screen and (min-width: 1200px) and (max-width: 600px) and (max-width: 800px), only screen and (min-width: 1200px) and (max-width: 600px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1200px) and (max-width: 600px) and (min-resolution: 192dpi), only screen and (min-width: 1200px) and (max-width: 600px) and (min-resolution: 2dppx) {
+  .services__mentioned {
+    position: relative;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 27rem;
+    margin-bottom: 48px;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
   .portolio__mentioned {
     position: relative;
     left: 0;
@@ -2494,6 +2536,7 @@ button:focus {
     max-width: 27rem;
     margin-bottom: 3rem;
     margin-left: 0.5rem;
+    z-index: 10;
   }
   .portolio__mentioned::before {
     width: 4rem;
@@ -2640,6 +2683,38 @@ button:focus {
 @media screen and (max-width: 1200px) {
   .our-portfolio.portfolio {
     font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brands__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  .brands__list:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .brands__item {
+    max-width: 12rem;
+    margin-bottom: 1.6rem;
+  }
+  .mr-0 {
+    margin-right: 0;
+  }
+  .brands__item img {
+    width: 100%;
+    height: auto;
+  }
+  .brands__item:nth-child(odd) {
+    margin-right: 3.1rem;
+  }
+  .brands__item:nth-child(even) {
+    margin-right: 0;
+  }
+  .brands__item:last-child {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
   }
 }
 @font-face {

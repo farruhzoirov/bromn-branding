@@ -100,7 +100,7 @@ serviceLinks.forEach((serviceLink, index) => {
     deActivateServiceItems();
     deActivateServiceTabs();
 
-    serviceLink.parentElement.classList.add('service__item--active');
+    serviceLink.parentElement.classList.add('service__item--active')  ;
     servicesType[index].classList.add('services__type--active');
   });
 });
@@ -172,7 +172,11 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   console.log(form)
   fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        if(response.ok) {
+            alert("Ma'lumotlaringiz muvaffaqiyatli yuborildi")
+        }
+      })
       .catch(error => console.error('Error!', error.message))
 })
 
