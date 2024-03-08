@@ -338,26 +338,7 @@ only screen and (min-resolution: 2dppx) {
   }
 }
 
-@include media(800px) {
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 3),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (max-width: 800px),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    .header-intro-wrapper {
-      padding-top: 2rem;
-      background-image: url("../img/intro-mobile-bg@3x.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: 40rem;
-      background-attachment: fixed !important;
-    }
-  }
-}
+
 
 
 @include media(650px) {

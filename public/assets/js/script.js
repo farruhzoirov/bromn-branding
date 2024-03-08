@@ -5,7 +5,7 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 
 const trickerArrow = [
-  '../assets/img/opener-arrow.svg'
+  '../public/assets/img/opener-arrow.svg'
 ]
 
 
@@ -16,7 +16,7 @@ const sliderDescriptions = [
   },
   {
     title:'Shukur Proff',
-    desc: 'Logo branding / Instagram Content / Akaunt packaging.'
+    desc: 'Logo branding / Instagram Content / Account packaging.'
   },
   {
     title:'MDC Uzbekistan',
@@ -32,7 +32,7 @@ const sliderDescriptions = [
   },
   {
     title:'DizaynTech',
-    desc: 'Logo branding/ Identika/Instagram Content/ Instagram packaging'
+    desc: 'Logo branding/Identika/Instagram Content.'
   }
 ]
 
