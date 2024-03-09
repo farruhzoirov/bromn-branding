@@ -131,12 +131,21 @@ if (document.documentElement.offsetWidth <= 1200) {
     });
   });
 }
+const sidebarLinks = document.querySelectorAll('.sidebar__item a');
 
+
+sidebarLinks.forEach((item, index )=> {
+  item.addEventListener('click', () => {
+    headerSidebar.style.left = '-120%';
+  })
+})
 if (togglerBtn) {
   togglerBtn.addEventListener('click', () => {
     headerSidebar.style.left = '0';
   })
 }
+
+
 
 if (sidebarCloser) {
   sidebarCloser.addEventListener('click', () => {
