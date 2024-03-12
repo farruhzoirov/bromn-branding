@@ -687,6 +687,138 @@ button:focus {
     font-size: 20px;
   }
 }
+.backdrop {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.modal-wrapper {
+  width: 100%;
+  max-width: 45rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(54, 14, 97);
+  border-radius: 3rem;
+  padding: 4rem;
+  z-index: 100;
+  background-attachment: fixed;
+}
+.modal-wrapper strong {
+  color: white;
+  font-size: 2rem;
+}
+.modal-wrapper p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#modal-close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.modal-open {
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .backdrop {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  .modal-wrapper {
+    width: 100%;
+    max-width: 95%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(54, 14, 97);
+    border-radius: 3rem;
+    padding: 4rem;
+    z-index: 100;
+    background-attachment: fixed;
+  }
+  .modal-wrapper strong {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .modal-wrapper p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .response-marker {
+    width: 100%;
+    max-width: 8rem;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+  }
+}
+.location-link {
+  display: flex;
+  width: 100%;
+  max-width: 10rem;
+  align-items: center;
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  margin-top: 0.4rem;
+}
+.location-link img {
+  margin-right: 0.6rem;
+}
+.location-link span {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  .location-link {
+    display: flex;
+    width: 100%;
+    max-width: 12rem;
+    align-items: center;
+    border: 0.2rem solid white;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+  }
+  .location-link img {
+    margin-right: 0.6rem;
+  }
+  .location-link span {
+    white-space: nowrap;
+  }
+}
 .brands__list {
   width: 80%;
   display: grid;
@@ -1946,6 +2078,7 @@ button:focus {
   border-radius: 0.25rem;
   background-color: var(--darker-color);
   flex-shrink: 0;
+  font-size: 1.5rem;
 }
 .form__submit__button span {
   color: #ffffff;
@@ -2528,7 +2661,7 @@ button:focus {
     align-items: center;
     width: 100%;
     max-width: 27rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     margin-left: 0.5rem;
     z-index: 10;
   }
@@ -2554,7 +2687,7 @@ button:focus {
     align-items: center;
     width: 100%;
     max-width: 27rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     margin-left: 0.5rem;
   }
   .customers__mentioned::before {
@@ -2602,7 +2735,7 @@ button:focus {
     align-items: center;
     width: 100%;
     max-width: 27rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     margin-left: 0.5rem;
   }
   .portolio__mentioned::before {
@@ -2667,6 +2800,16 @@ button:focus {
 @media screen and (max-width: 400px) {
   .site-intro__title {
     font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer__logos img:first-child {
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer__logos img:first-child {
+    margin-right: 1rem !important;
   }
 }
 @media screen and (max-width: 375px) {

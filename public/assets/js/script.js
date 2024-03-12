@@ -5,33 +5,33 @@ const sliderContainer = document.querySelector('.site-main__slider');
 
 
 const trickerArrow = [
-  '../public/assets/img/opener-arrow.svg'
+  '../assets/img/opener-arrow.svg'
 ]
 
 
 const sliderDescriptions = [
   {
-    title:'Transport Universiteti',
+    title: 'Transport Universiteti',
     desc: 'Web design / UX/UI analitika'
   },
   {
-    title:'Shukur Proff',
+    title: 'Shukur Proff',
     desc: 'Logo branding / Instagram Content / Account packaging.'
   },
   {
-    title:'MDC Uzbekistan',
+    title: 'MDC Uzbekistan',
     desc: 'Logo branding/ Branding/ Identika'
   },
   {
-    title:'Akademik mukofoti',
+    title: 'Akademik mukofoti',
     desc: 'Logo/ Mukofot'
   },
   {
-    title:'Royal vs Proline',
+    title: 'Royal vs Proline',
     desc: 'Dizayn/ Katalog dizayn'
   },
   {
-    title:'DizaynTech',
+    title: 'DizaynTech',
     desc: 'Logo branding/Identika/Instagram Content.'
   }
 ]
@@ -86,13 +86,12 @@ changeSlide();
 setInterval(changeSlide, 3000);
 
 
-
 // Ticker codes
 
 const tickerTrack = document.querySelector('.ticker__track');
 for (let i = 0; i < 50; i++) {
   tickerTrack.innerHTML += `
-             <span class="ticker__item">Web dizayn </span>
+             <span class="ticker__item">Web dizayn</span>
              <img src="${trickerArrow[0]}" alt="">
              <span  class="ticker__item">Packaging dizayn </span>
              <img src="${trickerArrow[0]}" alt="">
@@ -214,8 +213,8 @@ const deActiveTexts = (element) => {
 
 const deActiveTabs = (element) => {
   element.forEach((item, index) => {
-        item.classList.remove('type__tab--active');
-    })
+    item.classList.remove('type__tab--active');
+  })
 }
 
 smallScreenTabs.forEach((item, index) => {
@@ -260,9 +259,60 @@ largeScreenTabs_2.forEach((item, index) => {
 })
 
 
+const modalBackdrop = document.querySelector('.backdrop');
 
+const modalCloserElements = document.querySelectorAll('[data-modal-close]');
+const submitBtn = document.querySelector('.form__submit__button');
 
+const openModal = () => {
+  modalBackdrop.classList.add('modal-open');
+}
 
+function closeModal() {
+  modalBackdrop.classList.remove('modal-open');
+}
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+})
+
+modalCloserElements.forEach(element => {
+  element.addEventListener('click', e => {
+    if (e.target.hasAttribute('data-modal-close')) {
+      closeModal();
+    }
+  })
+});
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwnx8TneL3bc02ZbfH-qbB9HL03HIWx7iwBS3yN1muph_1nLzxVAzm_WrUalKEQ_-Xr/exec';
+const registrationForm = document.querySelector('.registration__form');
+const nameInput = document.getElementById('name-input');
+const phoneInput = document.getElementById('tel-input');
+const usernameInput = document.getElementById('username-input');
+registrationForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  submitBtn.setAttribute('disabled', true);
+  submitBtn.style.color = 'white';
+  submitBtn.textContent = 'Yuborilmoqda...';
+  if (nameInput.value.trim() && phoneInput.value.trim()) {
+    fetch(scriptURL, {method: 'POST', body: new FormData(registrationForm)})
+        .then(response => {
+          if (response.ok) {
+            openModal();
+            submitBtn.style.color = 'white';
+            submitBtn.textContent = 'Yuborish';
+            nameInput.value = '';
+            phoneInput.value = '';
+            usernameInput.value = '';
+          }
+        })
+        .catch(error => console.error('Error!', error.message));
+  } else {
+    alert("Iltimos ma'lumotlarni to'g'riligicha kiriting!");
+  }
+})
 
 
 

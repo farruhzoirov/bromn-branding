@@ -174,20 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
   observer.observe(secondStrong);
 });
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwnx8TneL3bc02ZbfH-qbB9HL03HIWx7iwBS3yN1muph_1nLzxVAzm_WrUalKEQ_-Xr/exec'
-const form = document.forms['submit-to-google-sheet']
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  console.log(form)
-  fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-      .then(response => {
-        if(response.ok) {
-            alert("Ma'lumotlaringiz muvaffaqiyatli yuborildi")
-        }
-      })
-      .catch(error => console.error('Error!', error.message))
-})
 
 
 try {
